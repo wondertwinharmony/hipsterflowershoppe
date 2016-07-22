@@ -1,0 +1,19 @@
+[X] Create simple server to serve static files and assets
+[] Set up testing environment using mocha testing library, chai, sinon, karma for testing coverage
+  [] E2E testing for front-end
+  [] Unit Tests for front-end
+  [] Integration Testing? (probably not..)
+[] Make website responsive
+  [] Test on various viewport sizes...
+[] Make sure website is cross browser compatible
+  [] Does it work on Mozilla?
+  [] Does it work on Google Chrome?
+  [] Does it work on Safari?
+  [] Does it work on Internet Explorer (gross...)?
+  [] Does it work on Opera?
+[] Make website with accessibility features for disabled/handicapped users
+  [] Aria labels?
+  [] High contrast?
+[] Set up a task runner (Grunt or Gulp)
+[] CSS Preprocessors? (Sass, Less, Stylus)
+[] Allow the contact me page to send a post request that will also send an email notifcation, using an api like Mailgun, Nodemailer, or SendGrid
