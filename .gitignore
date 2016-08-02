@@ -2,3 +2,5 @@
 node_modules
 bower_components
 dist
+client/jsx-compiled
+client/bundle.js

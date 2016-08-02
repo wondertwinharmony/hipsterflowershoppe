@@ -1,11 +1,20 @@
 /**
- * TO-DO: ADD A TASK TO LINT ES6/JSX/REACT FILES WITH ESLINT
+ * TO-DO: FIX UGLIFY AND CONCAT
  */
 
 module.exports = function(grunt){
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    browserify: {
+      dist: {
+        options: {
+           transform: [['babelify', {presets: ['es2015', 'react']}]]
+        },        
+        src: ['client/components/*.js', 'client/jsx-compiled/*.js'],
+        dest: 'client/bundle.js',
+      }
+    },
     concat: {
       options: {
         separator: ';'
@@ -25,7 +34,7 @@ module.exports = function(grunt){
       },
       dist: {
         files: {
-          'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+          'dist/<%= pkg.name %>.min.js': ['<%= browserify.dist.dest %>']
         }
       }
     },
@@ -36,28 +45,28 @@ module.exports = function(grunt){
         // rulePaths: ['conf/rules']
       },
       //files to lint
-      target: ['Gruntfile.js', 'client/**/*.jsx', 'client/**/*.js']
+      target: ['Gruntfile.js', 'client/components/*.jsx', 'client/components/*.js']
     },
-    // babel: {
-    //   options: {
-    //     plugins: ['transform-react-jsx'],
-    //     presets: ['es2015', 'react']
-    //   },
-    //   jsx: {
-    //     files: [{
-    //       expand: true,
-    //       cwd: 'source/js/jsx/', // Custom folder
-    //       src: ['*.jsx'],
-    //       dest: 'source/js/jsx-compiled/', // Custom folder
-    //       ext: '.js'
-    //     }]
-    //   }
-    // },
+    babel: {
+      options: {
+        plugins: ['transform-react-jsx'],
+        presets: ['es2015', 'react']
+      },
+      jsx: {
+        files: [{
+          expand: true,
+          cwd: 'client/components', // Custom folder
+          src: ['*.jsx'],
+          dest: 'client/jsx-compiled/', // Custom folder
+          ext: '.js'
+        }]
+      }
+    },
     watch: {
       //files to keep an eye on, in this case all files that are listed in the jshint task
       files: ['<%= eslint.target %>'],
       //tasks to run when files stated above have changed
-      tasks: ['eslint'],
+      tasks: ['babel', 'eslint', 'browserify'],
       options: {
         //spawn is set to false to eslint is called in the correct context
         spawn: false
@@ -66,11 +75,12 @@ module.exports = function(grunt){
   });
 
   grunt.loadNpmTasks('grunt-babel');
+  grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-eslint');
 
   //tasks for final ['jshint', 'babel', 'concat', 'uglify']
-  grunt.registerTask('default', ['eslint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['babel', 'eslint', 'browserify']);
 };
