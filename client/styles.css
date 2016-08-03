@@ -6,4 +6,28 @@
   margin: 10px 10px 10px 10px;
 }
 
+.facebook-btn {
+  color: white;
+}
 
+.facebook-btn:hover {
+  color: black;
+}
+
+a.photographer-link:hover {
+  color: black;
+}
+
+p.contact-footer {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+p.webdevs,
+p.photographers,
+p.contact-footer {
+  color: white;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif; 
+}
