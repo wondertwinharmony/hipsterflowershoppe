@@ -31,3 +31,8 @@ p.contact-footer {
   font-weight: 200;
   font-family: "Roboto", sans-serif; 
 }
+
+p.photographers > a,
+p.webdevs > a {
+  color: #01608e;
+}
