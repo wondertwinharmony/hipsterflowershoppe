@@ -65,4 +65,3 @@ class Content extends Component {
 }
 
 ReactDOM.render(<Content />, document.getElementById('content'));
-
