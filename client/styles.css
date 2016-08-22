@@ -6,6 +6,29 @@
   padding: 0px 192px 0px 192px;
 }
 
+svg {
+  display: block;
+  margin: 0 auto;
+  font-family: Bevan;
+  font-size: 60px;
+  /*text-shadow: 4px 4px teal;*/
+  text-shadow: -10px 10px 0px #00e6e6,
+               -20px 20px 0px #01cccc,
+               -30px 30px 0px #00bdbd;
+  font-size: 60px;
+  font-family: 'Bevan';
+  fill: url(#white-pattern);
+} 
+
+#white {
+  width: 600px;
+  height: 225px;
+}
+
+.navButtonsCenter {
+  text-align: center;
+}
+
 .navButton {
   margin: 10px 10px 10px 10px;
 }
