@@ -6,7 +6,7 @@ import FontAwesome from 'react-fontawesome';
 import Home from './home.js';
 import About from './about.js';
 import Balloons from './balloons.js';
-// import Slider from 'react-slick';
+import Flowers from './flowers.js';
 
 class Content extends Component {
   constructor(props) {
@@ -29,6 +29,8 @@ class Content extends Component {
       partial = <About />;
     } else if (this.state.currentPage === '#!/balloons') {
       partial = <Balloons />;
+    } else if (this.state.currentPage === '#!/flowers') {
+      partial = <Flowers />;
     }
     
     // Need to decide which of these to use in final title implementation
@@ -54,7 +56,7 @@ class Content extends Component {
               <Button className='navButton' waves='light' href="#!/" onClick={this.onContentChange}>Home</Button>
               <Button className='navButton' waves='light' href="#!/about" onClick={this.onContentChange}>About</Button>
               <Button className='navButton' waves='light' href="#!/balloons" onClick={this.onContentChange}>Balloon Decor</Button>
-              <Button className='navButton' waves='light'>Floral Designs</Button>
+              <Button className='navButton' waves='light' href="#!/flowers" onClick={this.onContentChange}>Floral Designs</Button>
               <Button className='navButton' waves='light'>Contact</Button>
             </Col>
           </Row>
