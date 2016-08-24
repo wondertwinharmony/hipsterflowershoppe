@@ -5,6 +5,8 @@ import { Footer, Button, Row, Col} from 'react-materialize';
 import FontAwesome from 'react-fontawesome';
 import Home from './home.js';
 import About from './about.js';
+import Balloons from './balloons.js';
+// import Slider from 'react-slick';
 
 class Content extends Component {
   constructor(props) {
@@ -25,6 +27,8 @@ class Content extends Component {
       partial = <Home />;
     } else if (this.state.currentPage === '#!/about') {
       partial = <About />;
+    } else if (this.state.currentPage === '#!/balloons') {
+      partial = <Balloons />;
     }
     
     // Need to decide which of these to use in final title implementation
@@ -49,7 +53,7 @@ class Content extends Component {
             <Col s={12} m={12} l={12} className='navButtonsCenter'>
               <Button className='navButton' waves='light' href="#!/" onClick={this.onContentChange}>Home</Button>
               <Button className='navButton' waves='light' href="#!/about" onClick={this.onContentChange}>About</Button>
-              <Button className='navButton' waves='light'>Balloon Decor</Button>
+              <Button className='navButton' waves='light' href="#!/balloons" onClick={this.onContentChange}>Balloon Decor</Button>
               <Button className='navButton' waves='light'>Floral Designs</Button>
               <Button className='navButton' waves='light'>Contact</Button>
             </Col>
