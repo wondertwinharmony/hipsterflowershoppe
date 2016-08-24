@@ -6,6 +6,21 @@
   padding: 0px 192px 0px 192px;
 }
 
+#balloons-content {
+  padding: 0px 100px 0px 100px;
+  color: #333;
+/*  background: #419be0;*/
+}
+
+button.slick-next:before,
+.slick-prev:before  {
+  color: rgba(8, 8, 8, 0.59);
+}
+
+div.slick-slide > img {
+  margin: 0 auto;
+}
+
 svg {
   display: block;
   margin: 0 auto;
