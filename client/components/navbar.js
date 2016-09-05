@@ -9,7 +9,6 @@ export default class Topbar extends Component {
   }
   
   render() {
-    console.log("state in topbar: ", this.state);
     return (
       <div>
         <div>

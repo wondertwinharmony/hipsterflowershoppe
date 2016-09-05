@@ -19,7 +19,7 @@ export default class Bottombar extends Component {
           <li><a className="grey-text text-lighten-3" href="#!/about" onClick={this.onPageSwap}>About</a></li>
           <li><a className="grey-text text-lighten-3" href="#!">Balloon Decorations</a></li>
           <li><a className="grey-text text-lighten-3" href="#!">Floral Designs</a></li>
-          <li><a className="grey-text text-lighten-3" href="#!">Contact Info</a></li>
+          <li><a className="grey-text text-lighten-3" href="/contact">Contact Info</a></li>
         </ul>
       }>
         <h5 className="white-text">Cheri's Creative Celebrations</h5>

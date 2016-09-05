@@ -1,36 +1,58 @@
 import React from 'react';
 import { Component } from 'react';
 import ReactDOM from 'react-dom';
+import $ from 'jquery';
 import { Footer, Button, Row, Col} from 'react-materialize';
 import FontAwesome from 'react-fontawesome';
 import Home from './home.js';
 import About from './about.js';
 import Balloons from './balloons.js';
 import Flowers from './flowers.js';
+import Contact from './contact.js';
 
 class Content extends Component {
   constructor(props) {
     super(props);
-    this.state = {currentPage: '#!/'};
+    this.state = {currentPage: ''};
 
     this.onContentChange = this.onContentChange.bind(this);
+    this.handleContactFormSubmit = this.handleContactFormSubmit.bind(this);
   }
 
   onContentChange(event) {
     this.setState({currentPage: event.target.getAttribute('href')});
   }
 
+  handleContactFormSubmit(contactInfo) {
+    $.ajax({
+      url: '/contact',
+      dataType: 'json',
+      type: 'POST',
+      data: contactInfo,
+      success: function(data) {
+        //TO-DO: Have a modal pop up when an inquiry has been successfully sent to the server
+        console.log("data on successful ajax: ", data);
+      },
+      error: function(xhr, status, err) {
+        console.error(xhr, status, err.toString());
+      }
+    });
+  }
+
   render() {
     var partial;
 
-    if (this.state.currentPage === '#!/') {
+    if (this.state.currentPage === '') {
       partial = <Home />;
-    } else if (this.state.currentPage === '#!/about') {
+    } else if (this.state.currentPage === '#/about') {
       partial = <About />;
-    } else if (this.state.currentPage === '#!/balloons') {
+    } else if (this.state.currentPage === '#/balloons') {
       partial = <Balloons />;
-    } else if (this.state.currentPage === '#!/flowers') {
+    } else if (this.state.currentPage === '#/flowers') {
       partial = <Flowers />;
+    } else if (this.state.currentPage === '#/contact') {
+      console.log("props: ", this.props);
+      partial = <Contact onContactSubmit={this.handleContactFormSubmit} />;
     }
     
     // Need to decide which of these to use in final title implementation
@@ -53,11 +75,11 @@ class Content extends Component {
           </svg>
           <Row>
             <Col s={12} m={12} l={12} className='navButtonsCenter'>
-              <Button className='navButton' waves='light' href="#!/" onClick={this.onContentChange}>Home</Button>
-              <Button className='navButton' waves='light' href="#!/about" onClick={this.onContentChange}>About</Button>
-              <Button className='navButton' waves='light' href="#!/balloons" onClick={this.onContentChange}>Balloon Decor</Button>
-              <Button className='navButton' waves='light' href="#!/flowers" onClick={this.onContentChange}>Floral Designs</Button>
-              <Button className='navButton' waves='light'>Contact</Button>
+              <Button className='navButton' waves='light' href="#/" onClick={this.onContentChange}>Home</Button>
+              <Button className='navButton' waves='light' href="#/about" onClick={this.onContentChange}>About</Button>
+              <Button className='navButton' waves='light' href="#/balloons" onClick={this.onContentChange}>Balloon Decor</Button>
+              <Button className='navButton' waves='light' href="#/flowers" onClick={this.onContentChange}>Floral Designs</Button>
+              <Button className='navButton' waves='light' href="#/contact" onClick={this.onContentChange}>Contact</Button>
             </Col>
           </Row>
       </div>
@@ -66,10 +88,10 @@ class Content extends Component {
         <ul>
           <h5 className="white-text">Follow Us On</h5>
           <li className="grey-text text-lighten-3"><a className="facebook-btn" href="https://www.facebook.com/cheri.creativecelebrations/" target="_blank"><FontAwesome name="facebook-official" size="2x"/></a></li>
-          <li><a className="grey-text text-lighten-3" href="#!/about" onClick={this.onContentChange}>About</a></li>
-          <li><a className="grey-text text-lighten-3" href="#!">Balloon Decorations</a></li>
-          <li><a className="grey-text text-lighten-3" href="#!">Floral Designs</a></li>
-          <li><a className="grey-text text-lighten-3" href="#!">Contact Info</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/about" onClick={this.onContentChange}>About</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/balloons" onClick={this.onContentChange}>Balloon Decorations</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/flowers" onClick={this.onContentChange}>Floral Designs</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/contact" onClick={this.onContentChange}>Contact Info</a></li>
         </ul>
       }>
         <h5 className="white-text">Cheri's Creative Celebrations</h5>
