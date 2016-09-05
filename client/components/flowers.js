@@ -14,6 +14,7 @@ const SimpleSlider = React.createClass({
     };
     return (
       <div id="flowers-content">
+        <span>Flower Designs</span>
         <Slider {...settings}>
           <div><img src='http://placekitten.com/g/400/200' /></div>
           <div><img src='http://placekitten.com/g/400/200' /></div>
