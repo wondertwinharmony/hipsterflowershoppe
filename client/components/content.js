@@ -55,24 +55,29 @@ class Content extends Component {
       partial = <Contact onContactSubmit={this.handleContactFormSubmit} />;
     }
     
-    // Need to decide which of these to use in final title implementation
-    // http://casablancasunset.com/wp-content/uploads/2013/12/washed-out-paracosm.jpg
-    // https://s3-us-west-2.amazonaws.com/s.cdpn.io/131611/flower-bloom.gif
     
     return (
       <div>
         <div className="parent">
-          <svg id="white">
-            <text x="0" y="0">
-              <tspan x="1.8em" y="1em">CHERI'S</tspan>
-              <tspan x="1.2em" y="2.0em">CREATIVE</tspan>
-              <tspan x="0.5em" y="3.0em">CELEBRATIONS</tspan>
-            </text>
-            <pattern id="white-pattern" patternUnits="userSpaceOnUse"
-                       width="500" height="281" viewbox="0 0 500 281">
-              <image href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/131611/flower-bloom.gif" width="500" height="281" />
-            </pattern>
-          </svg>
+          <div>
+            <div className="balloonContainer">
+              <div className="balloon">
+                  <div><span className="letters">C</span>
+                  </div>
+                  <div><span className="letters">H</span>
+                  </div>
+                  <div><span className="letters">E</span>
+                  </div>
+                  <div><span className="letters">R</span>
+                  </div>
+                  <div><span className="letters">I</span>
+                  </div>
+                  <div><span className="letters">'S</span>
+                  </div>
+              </div>
+            </div>
+            <div className="title">Creative Celebrations</div>
+        </div>
           <Row>
             <Col s={12} m={12} l={12} className='navButtonsCenter'>
               <Button className='navButton' waves='light' href="#/" onClick={this.onContentChange}>Home</Button>
@@ -112,3 +117,21 @@ class Content extends Component {
 }
 
 ReactDOM.render(<Content />, document.getElementById('content'));
+
+/**
+  Need to decide which of these to use in final title implementation
+  http://casablancasunset.com/wp-content/uploads/2013/12/washed-out-paracosm.jpg
+  https://s3-us-west-2.amazonaws.com/s.cdpn.io/131611/flower-bloom.gif
+    
+        <svg id="white">
+            <text x="0" y="0">
+              <tspan x="1.8em" y="1em">CHERI'S</tspan>
+              <tspan x="1.2em" y="2.0em">CREATIVE</tspan>
+              <tspan x="0.5em" y="3.0em">CELEBRATIONS</tspan>
+            </text>
+            <pattern id="white-pattern" patternUnits="userSpaceOnUse"
+                       width="500" height="281" viewbox="0 0 500 281">
+              <image href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/131611/flower-bloom.gif" width="500" height="281" />
+            </pattern>
+          </svg>
+ */
