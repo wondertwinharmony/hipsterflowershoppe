@@ -44,5 +44,3 @@ app.use(express.static(__dirname + '/client'));
 //start server
 app.listen(port);
 console.log('Website is live at port: ', port);
-
-
