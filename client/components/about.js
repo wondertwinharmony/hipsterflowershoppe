@@ -5,9 +5,8 @@ export default class About extends Component {
   render() {
     return (
       <div id="about-content">
-        <h3> About Page </h3>
-        <p>Bacon ipsum dolor amet salami frankfurter shankle swine tail. Tongue turducken strip steak salami ground round, pork belly chicken turkey boudin shank prosciutto jerky shoulder. Swine bresaola pork belly filet mignon strip steak cow. Biltong pig pork loin kielbasa jowl, t-bone cupim chicken bresaola alcatra venison short ribs. Swine kielbasa beef hamburger capicola pork belly t-bone leberkas chicken pastrami brisket. Sirloin landjaeger ground round, meatball t-bone bresaola leberkas beef ribs andouille turducken.</p>
-        <p>Flank landjaeger tail drumstick kielbasa tenderloin beef short ribs shoulder tri-tip. Pig pork loin hamburger, filet mignon drumstick tail brisket venison pork bacon ham. Ham doner ham hock, drumstick bresaola venison andouille bacon spare ribs. Pork loin pork shankle tenderloin jowl ground round andouille. Pork salami kielbasa shank pig, short ribs ball tip kevin tail chuck.</p>
+        <p><img className="about-image" src='../assets/cheri_working.jpg' />Cheri's Creative Celebrations uses only "The Very Best" Qualatex ™ balloons. Qualatex ™ latex balloons "are biodegradable, and decompose as fast as an oak leaf in your backyard!" Cheri's Creative Celebrations has been in business since April 2014. However, Cheri has over 10 years experience in working with balloons and has her Floral Design Certificate from Santa Rosa Junior College.</p>
+        <p>Some things you may not have known about balloons that Cheri finds interesting.  Qualatex ™ <a href="http://www.qualatex.com/pages/facts.php" target="blank">Little know balloon facts</a></p>
       </div>
     );  
   }
