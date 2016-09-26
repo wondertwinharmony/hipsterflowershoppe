@@ -13,7 +13,7 @@ import Contact from './contact.js';
 class Content extends Component {
   constructor(props) {
     super(props);
-    this.state = {currentPage: ''};
+    this.state = {currentPage: '#/'};
 
     this.onContentChange = this.onContentChange.bind(this);
     this.handleContactFormSubmit = this.handleContactFormSubmit.bind(this);
@@ -42,7 +42,7 @@ class Content extends Component {
   render() {
     var partial;
 
-    if (this.state.currentPage === '') {
+    if (this.state.currentPage === '#/') {
       partial = <Home />;
     } else if (this.state.currentPage === '#/about') {
       partial = <About />;
@@ -70,9 +70,9 @@ class Content extends Component {
                   </div>
                   <div><span className="letters">R</span>
                   </div>
-                  <div><span className="letters">I</span>
+                  <div><span className="letters">I<span className="apostrophe">'</span></span>
                   </div>
-                  <div><span className="letters">'S</span>
+                  <div><span className="letters">S</span>
                   </div>
               </div>
             </div>
@@ -125,13 +125,11 @@ ReactDOM.render(<Content />, document.getElementById('content'));
     
         <svg id="white">
             <text x="0" y="0">
-              <tspan x="1.8em" y="1em">CHERI'S</tspan>
-              <tspan x="1.2em" y="2.0em">CREATIVE</tspan>
-              <tspan x="0.5em" y="3.0em">CELEBRATIONS</tspan>
+              <tspan x="1.2em" y="2.0em">CREATIVE CELEBRATIONS</tspan>
             </text>
             <pattern id="white-pattern" patternUnits="userSpaceOnUse"
                        width="500" height="281" viewbox="0 0 500 281">
-              <image href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/131611/flower-bloom.gif" width="500" height="281" />
+              <image href="  http://casablancasunset.com/wp-content/uploads/2013/12/washed-out-paracosm.jpg" width="500" height="281" />
             </pattern>
           </svg>
  */

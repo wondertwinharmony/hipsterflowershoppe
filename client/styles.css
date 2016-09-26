@@ -20,6 +20,7 @@ button.slick-next:before,
 
 div.slick-slide > img {
   margin: 0 auto;
+  max-width: 400px;
 }
 
 /* commented out svg in content.js */
@@ -90,13 +91,19 @@ p.webdevs > a {
 
 .letters {
   text-transform: uppercase;
-  font-family: 'Wendy One', sans-serif;;
+  font-family: 'Wendy One', sans-serif;
   font-size: 4.8em;
   color: white;
   position: relative;
   top: 30px;
   left: 50%;
   margin-left: -27px;
+}
+
+.apostrophe {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: bold;
+  margin: 0px 0px 0px 5px;
 }
 
 .balloonContainer {
@@ -362,3 +369,37 @@ p.webdevs > a {
                 2px 0 black, 
                 0 -2px black;
 }
+
+/**
+ * Home Styling
+ */
+.smartBalloonLink {
+  /* smart balloon margin needs image class */
+  float: right;
+  margin: 40px 0px 0px 0px;
+}
+
+.smartBalloonImg {
+  width: 65%;
+}
+
+.listTitle {
+/*  text-decoration: underline;*/
+/*  font-weight: bold;*/
+  color: white;
+  font-size: 1.4em;
+  font-family: 'Wendy One', sans-serif;
+  text-shadow: -2px 0 black, 
+              0 2px black, 
+              2px 0 black, 
+              0 -2px black;
+}
+
+/**
+ * About Styling
+ */
+.about-image {
+  float: left;
+  margin: 5px 30px 5px 0px;
+}
+
