@@ -13,6 +13,16 @@
   color: #333;
 }
 
+div.logoContainer {
+/*  background-image: url("http://image.shutterstock.com/display_pic_with_logo/3663356/398534419/stock-vector-amazing-floral-pattern-with-bright-colorful-flowers-plants-branches-and-berries-on-a-black-398534419.jpg");*/
+  background-image: url("assets/stockalter4.png");
+  background-size: contain;
+}
+
+footer.page-footer {
+  background-color: #6f6a76;
+}
+
 button.slick-next:before,
 .slick-prev:before  {
   color: rgba(8, 8, 8, 0.59);
@@ -48,15 +58,25 @@ div.slick-slide > img {
 }
 
 .navButton {
-  margin: -5px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  background-color: #629297;
 }
 
-.facebook-btn {
+.submitButton {
+  background-color: #629297;
+}
+
+ul li.social {
+  display: inline;
+  margin-right: 5px;
+}
+
+.social-btn {
   color: white;
 }
 
-.facebook-btn:hover {
-  color: black;
+.social-btn:hover {
+  color: #feda93;
 }
 
 a.photographer-link:hover {
@@ -79,7 +99,7 @@ p.contact-footer {
 
 p.photographers > a,
 p.webdevs > a {
-  color: #01608e;
+  color: #feda93;
 }
 
 /**

@@ -59,7 +59,7 @@ class Content extends Component {
     return (
       <div>
         <div className="parent">
-          <div>
+          <div className="logoContainer">
             <div className="balloonContainer">
               <div className="balloon">
                   <div><span className="letters">C</span>
@@ -82,17 +82,22 @@ class Content extends Component {
             <Col s={12} m={12} l={12} className='navButtonsCenter'>
               <Button className='navButton' waves='light' href="#/" onClick={this.onContentChange}>Home</Button>
               <Button className='navButton' waves='light' href="#/about" onClick={this.onContentChange}>About</Button>
-              <Button className='navButton' waves='light' href="#/balloons" onClick={this.onContentChange}>Balloon Decor</Button>
+              <Button className='navButton' waves='light' href="#/balloons" onClick={this.onContentChange}>Balloons</Button>
               <Button className='navButton' waves='light' href="#/flowers" onClick={this.onContentChange}>Floral Designs</Button>
               <Button className='navButton' waves='light' href="#/contact" onClick={this.onContentChange}>Contact</Button>
             </Col>
           </Row>
       </div>
         {partial}
-      <Footer className="teal lighten-1" copyrights="&copy; 2015 Copyright Cheri's Creative Celebrations. All Rights Reserved."   links={
+      <Footer copyrights="&copy; 2015 Copyright Cheri's Creative Celebrations. All Rights Reserved."   links={
         <ul>
           <h5 className="white-text">Follow Us On</h5>
-          <li className="grey-text text-lighten-3"><a className="facebook-btn" href="https://www.facebook.com/cheri.creativecelebrations/" target="_blank"><FontAwesome name="facebook-official" size="2x"/></a></li>
+          <ul>
+            <li className="grey-text text-lighten-3 social"><a className="social-btn" href="https://www.facebook.com/cheri.creativecelebrations/" target="_blank"><FontAwesome name="facebook-square" size="2x"/></a></li>
+            <li className="grey-text text-lighten-3 social"><a className="social-btn" href="https://www.instagram.com/clrw70/" target="_blank"><FontAwesome name="instagram" size="2x"/></a></li>
+            <li className="grey-text text-lighten-3 social"><a className="social-btn" href="https://www.pinterest.com/chericreativece/" target="_blank"><FontAwesome name="pinterest-square" size="2x"/></a></li>
+            <li className="grey-text text-lighten-3 social"><a className="social-btn" href="" target="_blank"><FontAwesome name="twitter-square" size="2x"/></a></li>     
+          </ul>
           <li><a className="grey-text text-lighten-3" href="#/about" onClick={this.onContentChange}>About</a></li>
           <li><a className="grey-text text-lighten-3" href="#/balloons" onClick={this.onContentChange}>Balloon Decorations</a></li>
           <li><a className="grey-text text-lighten-3" href="#/flowers" onClick={this.onContentChange}>Floral Designs</a></li>
