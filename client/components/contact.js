@@ -71,7 +71,7 @@ class ContactForm extends Component {
             <Input id="subject" s={12} label="Subject" type="text" value={this.state.subject} onChange={this.onInputChange} validate/>
             <Input id="message" s={12} label="Message" type="textarea" value={this.state.message} onChange={this.onInputChange} validate/>
           </Row>
-          <Button waves="light" type="submit" value="Post">Submit</Button>
+          <Button className="submitButton" waves="light" type="submit" value="Post">Submit</Button>
         </form>
       </div>
     );
