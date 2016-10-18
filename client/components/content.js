@@ -2,13 +2,27 @@ import React from 'react';
 import { Component } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import { Footer, Button, Row, Col} from 'react-materialize';
+import { Footer, Button, Row, Col, Dropdown, NavItem } from 'react-materialize';
 import FontAwesome from 'react-fontawesome';
 import Home from './home.js';
 import About from './about.js';
-import Balloons from './balloons.js';
-import Flowers from './flowers.js';
+import CustomCreations from './balloons/customCreations.js';
+import Centerpieces from './balloons/centerpieces.js';
+import Arches from './balloons/arches.js';
+import Columns from './balloons/columns.js';
+import ParadeFloats from './balloons/paradeFloats.js';
+import Bouquets from './balloons/bouquets.js';
+import Drops from './balloons/drops.js';
+import Weddings from './flowers/weddings.js';
+import SympathyDesigns from './flowers/sympathyDesigns.js';
+import CorsagesBoutonnieres from './flowers/corsagesBoutonnieres.js';
+import AnniversaryParties from './flowers/anniversaryParties.js';
+import Arrangements from './flowers/arrangements.js';
+import Leis from './flowers/leis.js';
 import Contact from './contact.js';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+injectTapEventPlugin();
 
 class Content extends Component {
   constructor(props) {
@@ -39,6 +53,7 @@ class Content extends Component {
     });
   }
 
+
   render() {
     var partial;
 
@@ -46,10 +61,32 @@ class Content extends Component {
       partial = <Home />;
     } else if (this.state.currentPage === '#/about') {
       partial = <About />;
-    } else if (this.state.currentPage === '#/balloons') {
-      partial = <Balloons />;
-    } else if (this.state.currentPage === '#/flowers') {
-      partial = <Flowers />;
+    } else if (this.state.currentPage === '#/customCreations') {
+      partial = <CustomCreations />;
+    } else if (this.state.currentPage === '#/centerpieces') {
+      partial = <Centerpieces />;
+    } else if (this.state.currentPage === '#/arches') {
+      partial = <Arches />;
+    } else if (this.state.currentPage === '#/columns') {
+      partial = <Columns />;
+    } else if (this.state.currentPage === '#/paradeFloats') {
+      partial = <ParadeFloats />;
+    } else if (this.state.currentPage === '#/bouquets') {
+      partial = <Bouquets />;
+    } else if (this.state.currentPage === '#/drops') {
+      partial = <Drops />;
+    } else if (this.state.currentPage === '#/weddings') {
+      partial = <Weddings />;
+    } else if (this.state.currentPage === '#/sympathyDesigns') {
+      partial = <SympathyDesigns />;
+    } else if (this.state.currentPage === '#/corsagesBoutonnieres') {
+      partial = <CorsagesBoutonnieres />;
+    } else if (this.state.currentPage === '#/anniversaryParties') {
+      partial = <AnniversaryParties />;
+    } else if (this.state.currentPage === '#/arrangements') {
+      partial = <Arrangements />;
+    } else if (this.state.currentPage === '#/leis') {
+      partial = <Leis />;
     } else if (this.state.currentPage === '#/contact') {
       console.log("props: ", this.props);
       partial = <Contact onContactSubmit={this.handleContactFormSubmit} />;
@@ -80,11 +117,30 @@ class Content extends Component {
         </div>
           <Row>
             <Col s={12} m={12} l={12} className='navButtonsCenter'>
-              <Button className='navButton' waves='light' href="#/" onClick={this.onContentChange}>Home</Button>
-              <Button className='navButton' waves='light' href="#/about" onClick={this.onContentChange}>About</Button>
-              <Button className='navButton' waves='light' href="#/balloons" onClick={this.onContentChange}>Balloons</Button>
-              <Button className='navButton' waves='light' href="#/flowers" onClick={this.onContentChange}>Floral Designs</Button>
-              <Button className='navButton' waves='light' href="#/contact" onClick={this.onContentChange}>Contact</Button>
+              <Button className='navButton' waves='light' href="#/" onTouchTap={this.onContentChange}>Home</Button>
+              <Button className='navButton' waves='light' href="#/about" onTouchTap={this.onContentChange}>About</Button>
+              <Dropdown className='navButton' waves='light' trigger={
+              <Button waves='light'>Balloon Decor</Button>
+                }>
+                <NavItem href="#/customCreations" onTouchTap={this.onContentChange}>Custom Creations</NavItem>
+                <NavItem href="#/centerpieces" onTouchTap={this.onContentChange}>Centerpieces</NavItem>
+                <NavItem href="#/arches" onTouchTap={this.onContentChange}>Arches</NavItem>
+                <NavItem href="#/columns" onTouchTap={this.onContentChange}>Columns</NavItem>
+                <NavItem href="#/paradeFloats" onTouchTap={this.onContentChange}>Parade Floats</NavItem>
+                <NavItem href="#/bouquets" onTouchTap={this.onContentChange}>Bouquets</NavItem>
+                <NavItem href="#/drops" onTouchTap={this.onContentChange}>Drops</NavItem>
+              </Dropdown>
+              <Dropdown trigger={
+              <Button className='navButton' waves='light'>Floral Designs</Button>
+                }>
+                <NavItem href="#/weddings" onTouchTap={this.onContentChange}>Weddings</NavItem>
+                <NavItem href="#/sympathyDesigns" onTouchTap={this.onContentChange}>Sympathy Designs</NavItem>
+                <NavItem href="#/corsagesBoutonnieres" onTouchTap={this.onContentChange}>Corsages & Boutonnieres</NavItem>
+                <NavItem href="#/anniversaryParties" onTouchTap={this.onContentChange}>Anniversary Parties</NavItem>
+                <NavItem href="#/arrangements" onTouchTap={this.onContentChange}>Arrangements</NavItem>
+                <NavItem href="#/leis" onTouchTap={this.onContentChange}>Leis</NavItem>
+              </Dropdown>
+              <Button className='navButton' waves='light' href="#/contact" onTouchTap={this.onContentChange}>Contact</Button>
             </Col>
           </Row>
       </div>
@@ -98,10 +154,10 @@ class Content extends Component {
             <li className="grey-text text-lighten-3 social"><a className="social-btn" href="https://www.pinterest.com/chericreativece/" target="_blank"><FontAwesome name="pinterest-square" size="2x"/></a></li>
             <li className="grey-text text-lighten-3 social"><a className="social-btn" href="" target="_blank"><FontAwesome name="twitter-square" size="2x"/></a></li>     
           </ul>
-          <li><a className="grey-text text-lighten-3" href="#/about" onClick={this.onContentChange}>About</a></li>
-          <li><a className="grey-text text-lighten-3" href="#/balloons" onClick={this.onContentChange}>Balloon Decorations</a></li>
-          <li><a className="grey-text text-lighten-3" href="#/flowers" onClick={this.onContentChange}>Floral Designs</a></li>
-          <li><a className="grey-text text-lighten-3" href="#/contact" onClick={this.onContentChange}>Contact Info</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/about" onTouchTap={this.onContentChange}>About</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/balloons" onTouchTap={this.onContentChange}>Balloon Decorations</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/flowers" onTouchTap={this.onContentChange}>Floral Designs</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/contact" onTouchTap={this.onContentChange}>Contact Info</a></li>
         </ul>
       }>
         <h5 className="white-text">Cheri's Creative Celebrations</h5>

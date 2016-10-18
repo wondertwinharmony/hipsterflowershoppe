@@ -62,6 +62,21 @@ div.slick-slide > img {
   background-color: #629297;
 }
 
+.btn {
+/*  margin: 10px 10px 10px 10px !important;
+  background-color: #629297 !important;*/
+  margin: 10px 10px 10px 10px;
+  background-color: #629297;
+}
+
+.dropdown-content {
+  margin: 10px 0px 0px 10px;
+}
+
+.dropdown {
+  background-color: #629297;
+}
+
 .submitButton {
   background-color: #629297;
 }
