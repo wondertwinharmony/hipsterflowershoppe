@@ -17,6 +17,7 @@
     "react-fontawesome": "^1.1.0",
     "react-materialize": "0.14.5",
     "react-slick": "^0.13.2",
+    "react-tap-event-plugin": "^1.0.0",
     "slick-carousel": "^1.6.0"
   },
   "devDependencies": {

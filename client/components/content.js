@@ -9,6 +9,9 @@ import About from './about.js';
 import Balloons from './balloons.js';
 import Flowers from './flowers.js';
 import Contact from './contact.js';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+injectTapEventPlugin();
 
 class Content extends Component {
   constructor(props) {
@@ -105,21 +108,21 @@ class Content extends Component {
         </div>
           <Row>
             <Col s={12} m={12} l={12} className='navButtonsCenter'>
-              <Button className='navButton' waves='light' href="#/" onClick={this.onContentChange}>Home</Button>
-              <Button className='navButton' waves='light' href="#/about" onClick={this.onContentChange}>About</Button>
+              <Button className='navButton' waves='light' href="#/" onTouchTap={this.onContentChange}>Home</Button>
+              <Button className='navButton' waves='light' href="#/about" onTouchTap={this.onContentChange}>About</Button>
               <Dropdown trigger={
               <Button className='navButton' waves='light'>Floral Designs</Button>
                 }>
-                <NavItem href="#/flowers" onClick={this.onContentChange}>Flowers</NavItem>
+                <NavItem href="#/flowers" onTouchTap={this.onContentChange}>Flowers</NavItem>
                 <NavItem>empty</NavItem>
               </Dropdown>
               <Dropdown className='navButton' waves='light' trigger={
               <Button waves='light'>Balloon Decor</Button>
                 }>
-                <NavItem href="#/balloons" onClick={this.onContentChange}>Balloons</NavItem>
+                <NavItem href="#/balloons" onTouchTap={this.onContentChange}>Balloons</NavItem>
                 <NavItem>empty</NavItem>
               </Dropdown>
-              <Button className='navButton' waves='light' href="#/contact" onClick={this.onContentChange}>Contact</Button>
+              <Button className='navButton' waves='light' href="#/contact" onTouchTap={this.onContentChange}>Contact</Button>
             </Col>
           </Row>
       </div>
@@ -133,10 +136,10 @@ class Content extends Component {
             <li className="grey-text text-lighten-3 social"><a className="social-btn" href="https://www.pinterest.com/chericreativece/" target="_blank"><FontAwesome name="pinterest-square" size="2x"/></a></li>
             <li className="grey-text text-lighten-3 social"><a className="social-btn" href="" target="_blank"><FontAwesome name="twitter-square" size="2x"/></a></li>     
           </ul>
-          <li><a className="grey-text text-lighten-3" href="#/about" onClick={this.onContentChange}>About</a></li>
-          <li><a className="grey-text text-lighten-3" href="#/balloons" onClick={this.onContentChange}>Balloon Decorations</a></li>
-          <li><a className="grey-text text-lighten-3" href="#/flowers" onClick={this.onContentChange}>Floral Designs</a></li>
-          <li><a className="grey-text text-lighten-3" href="#/contact" onClick={this.onContentChange}>Contact Info</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/about" onTouchTap={this.onContentChange}>About</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/balloons" onTouchTap={this.onContentChange}>Balloon Decorations</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/flowers" onTouchTap={this.onContentChange}>Floral Designs</a></li>
+          <li><a className="grey-text text-lighten-3" href="#/contact" onTouchTap={this.onContentChange}>Contact Info</a></li>
         </ul>
       }>
         <h5 className="white-text">Cheri's Creative Celebrations</h5>
