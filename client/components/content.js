@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import { Footer, Button, Row, Col} from 'react-materialize';
+import { Footer, Button, Row, Col, Dropdown, NavItem } from 'react-materialize';
 import FontAwesome from 'react-fontawesome';
 import Home from './home.js';
 import About from './about.js';
@@ -38,6 +38,29 @@ class Content extends Component {
       }
     });
   }
+  
+              // <Button className='navButton' waves='light' href="#/" onClick={this.onContentChange}>Home</Button>
+              // <Button className='navButton' waves='light' href="#/about" onClick={this.onContentChange}>About</Button>
+              // <Button className='navButton' waves='light' href="#/balloons" onClick={this.onContentChange}>Balloon Decor</Button>
+              // <Button className='navButton' waves='light' href="#/flowers" onClick={this.onContentChange}>Floral Designs</Button>
+              // <Button className='navButton' waves='light' href="#/contact" onClick={this.onContentChange}>Contact</Button>
+              // 
+              // 
+              // <Button className='navButton' waves='light' href="#/" onClick={this.onContentChange}>Home</Button>
+              // <Button className='navButton' waves='light' href="#/about" onClick={this.onContentChange}>About</Button>
+              // <Button className='navButton' waves='light' href="#/contact" onClick={this.onContentChange}>Contact</Button>
+              // <Dropdown trigger={
+              //     <Button className='navButton' waves='light'>Balloons</Button>
+              //   }>
+              //   <NavItem href="#/balloons" onClick={this.onContentChange}>Kittens</NavItem>
+              //   <NavItem href="#/flowers" onClick={this.onContentChange}>flowers test</NavItem>
+              // </Dropdown>
+              // <Dropdown trigger={
+              //     <Button className='navButton' waves='light'>Floral Designs</Button>
+              //   }>
+              // <NavItem href="#/flowers" onClick={this.onContentChange}>Floral Designs</NavItem>
+              // <NavItem>two</NavItem>
+              // </Dropdown>
 
   render() {
     var partial;
@@ -48,8 +71,10 @@ class Content extends Component {
       partial = <About />;
     } else if (this.state.currentPage === '#/balloons') {
       partial = <Balloons />;
+      console.log("props balloons: ", this.props);
     } else if (this.state.currentPage === '#/flowers') {
       partial = <Flowers />;
+      console.log("props flowers: ", this.props);
     } else if (this.state.currentPage === '#/contact') {
       console.log("props: ", this.props);
       partial = <Contact onContactSubmit={this.handleContactFormSubmit} />;
@@ -82,8 +107,18 @@ class Content extends Component {
             <Col s={12} m={12} l={12} className='navButtonsCenter'>
               <Button className='navButton' waves='light' href="#/" onClick={this.onContentChange}>Home</Button>
               <Button className='navButton' waves='light' href="#/about" onClick={this.onContentChange}>About</Button>
-              <Button className='navButton' waves='light' href="#/balloons" onClick={this.onContentChange}>Balloons</Button>
-              <Button className='navButton' waves='light' href="#/flowers" onClick={this.onContentChange}>Floral Designs</Button>
+              <Dropdown trigger={
+              <Button className='navButton' waves='light'>Floral Designs</Button>
+                }>
+                <NavItem href="#/flowers" onClick={this.onContentChange}>Flowers</NavItem>
+                <NavItem>empty</NavItem>
+              </Dropdown>
+              <Dropdown className='navButton' waves='light' trigger={
+              <Button waves='light'>Balloon Decor</Button>
+                }>
+                <NavItem href="#/balloons" onClick={this.onContentChange}>Balloons</NavItem>
+                <NavItem>empty</NavItem>
+              </Dropdown>
               <Button className='navButton' waves='light' href="#/contact" onClick={this.onContentChange}>Contact</Button>
             </Col>
           </Row>
