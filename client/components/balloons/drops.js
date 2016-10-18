@@ -8,18 +8,16 @@ const SimpleSlider = React.createClass({
       dots: true,
       infinite: true,
       speed: 500,
-      adaptiveHeight: true,
-      fade: true,
       centerMode: false,
       slidesToShow: 1,
       slidesToScroll: 1
     };
     return (
-      <div id="flowers-content">
-        <span>Flower Designs</span>
-        <Slider className="sliderImg" {...settings}>
-          <div><img src='../assets/Flowers1.jpg' /></div>
-          <div><img src='../assets/Flowers2.jpg' /></div>
+      <div id="balloons-content">
+        <span>Drops</span>
+        <Slider {...settings}>
+          <div><img src='http://placekitten.com/g/400/200' /></div>
+          <div><img src='http://placekitten.com/g/400/200' /></div>
           <div><img src='http://placekitten.com/g/400/200' /></div>
           <div><img src='http://placekitten.com/g/400/200' /></div>
         </Slider>
