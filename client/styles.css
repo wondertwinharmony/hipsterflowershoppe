@@ -69,6 +69,10 @@ div.slick-slide > img {
   background-color: #629297;
 }
 
+.dropdown-content {
+  margin: 10px 0px 0px 10px;
+}
+
 .dropdown {
   background-color: #629297;
 }
