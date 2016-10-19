@@ -2,6 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import Slider from 'react-slick';
 
+// fade true, centerMode needs to be true or else imgs get weird
 const SimpleSlider = React.createClass({
   render: function () {
     const settings = {
@@ -10,7 +11,7 @@ const SimpleSlider = React.createClass({
       speed: 500,
       adaptiveHeight: true,
       fade: true,
-      centerMode: false,
+      centerMode: true,
       slidesToShow: 1,
       slidesToScroll: 1
     };

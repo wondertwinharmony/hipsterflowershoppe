@@ -10,7 +10,8 @@
 #balloons-content,
 #flowers-content {
   padding: 0px 100px 0px 100px;
-  color: #333;
+/*  margin: 0 auto;
+  color: #333;*/
 }
 
 div.logoContainer {
@@ -23,10 +24,44 @@ footer.page-footer {
   background-color: #6f6a76;
 }
 
-button.slick-next:before,
-.slick-prev:before  {
+/*#slideContainer {
+  width: 980px;
+  height: 100%;
+  background-color: blue;
+}*/
+
+/*button.slick-next:before,
+.slick-prev:before,  {
   color: rgba(8, 8, 8, 0.59);
+}*/
+
+div.slick-slide.slick-active {
+  position: relative;
+/*  left: -49px;*/
 }
+
+button.slick-arrow.slick-prev::before {
+  /*content: ">";*/
+  color: #629297;
+  font-size: 45px;
+  position: relative;
+  left: -20px;
+}
+
+button.slick-arrow.slick-next::before {
+  /*content: "<";*/
+  color: #629297;
+  font-size: 45px;
+}
+
+.slick-next:before, .slick-prev:before {
+  opacity: 1;
+  line-height: 0;
+}
+
+/*button.slick-arrow.slick-prev::before {
+  content: none;
+}*/
 
 div.slick-slide > img {
   margin: 0 auto;
