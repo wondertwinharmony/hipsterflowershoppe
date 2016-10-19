@@ -10,7 +10,7 @@ const SimpleSlider = React.createClass({
       speed: 500,
       adaptiveHeight: true,
       fade: true,
-      centerMode: false,
+      centerMode: true,
       slidesToShow: 1,
       slidesToScroll: 1
     };
