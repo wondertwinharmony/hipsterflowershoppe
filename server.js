@@ -19,7 +19,7 @@ var port = process.env.PORT || 7000;
 app.post('/contact', function(req, res){
   console.log("req.body for /contact route: ", req.body, mailgun);
   var mailOptions = {
-    from: "'" + req.body.first + " " + req.body.last + "' " + req.body.email,
+    from: '"' + req.body.first + " " + req.body.last + '"' + ' ' + req.body.email,
     to: "gabrielschrock@gmail.com",
     subject: req.body.first + " " + req.body.last + " - " + req.body.subject,
     text: req.body.message + "\n" + req.body.first + " " + req.body.last
@@ -33,7 +33,7 @@ app.post('/contact', function(req, res){
       return res.send("Error sending message");
     } else {
       console.log("Body from mailgun send function: ", body);
-      res.status(200).json({message: "Message successfully sent, thank you for your inquiry."});
+      res.status(200).json({message: "Your message was sent successfully."});
     }
   });
 });

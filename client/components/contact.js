@@ -33,7 +33,7 @@ class ContactForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log("Props from contact.js: ", this.props);
+    
     var first = this.state.first.trim();
     var last = this.state.last.trim();
     var email = this.state.email.trim();
