@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import { Footer, Button, Row, Col} from 'react-materialize';
+import { Footer, Button, Row, Col, Dropdown, NavItem } from 'react-materialize';
 import { default as swal } from 'sweetalert2';
 import FontAwesome from 'react-fontawesome';
 import Home from './home.js';
