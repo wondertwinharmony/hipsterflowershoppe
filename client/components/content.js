@@ -2,7 +2,8 @@ import React from 'react';
 import { Component } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import { Footer, Button, Row, Col, Dropdown, NavItem } from 'react-materialize';
+import { Footer, Button, Row, Col} from 'react-materialize';
+import { default as swal } from 'sweetalert2';
 import FontAwesome from 'react-fontawesome';
 import Home from './home.js';
 import About from './about.js';
@@ -24,6 +25,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 
 injectTapEventPlugin();
 
+
 class Content extends Component {
   constructor(props) {
     super(props);
@@ -44,11 +46,22 @@ class Content extends Component {
       type: 'POST',
       data: contactInfo,
       success: function(data) {
-        //TO-DO: Have a modal pop up when an inquiry has been successfully sent to the server
         console.log("data on successful ajax: ", data);
-      },
+      }.bind(this),
       error: function(xhr, status, err) {
         console.error(xhr, status, err.toString());
+        var message = "We're sorry! There was an error sending your message. Please try again later."
+        // alert("There was an error sending your message. Please try again later.");
+        swal("Oh no!", message, "error");
+      }.bind(this),
+      complete: function(data, status) {
+        var message = data.responseJSON.message + "\n Thank you for contacting Cheri's Creative Celebrations. \nWe will get back to you soon.";
+        if(status === "success"){
+          swal("Inquiry Submitted!", message, "success");
+        } else if (status === "error") {
+          message = "We're sorry! There was an error sending your message. Please try again later."
+          swal("Oh no!", message, "error");
+        }
       }
     });
   }
@@ -88,8 +101,7 @@ class Content extends Component {
     } else if (this.state.currentPage === '#/leis') {
       partial = <Leis />;
     } else if (this.state.currentPage === '#/contact') {
-      console.log("props: ", this.props);
-      partial = <Contact onContactSubmit={this.handleContactFormSubmit} />;
+      partial = <Contact onContactSubmit={this.handleContactFormSubmit}/>;
     }
     
     
@@ -149,10 +161,10 @@ class Content extends Component {
         <ul>
           <h5 className="white-text">Follow Us On</h5>
           <ul>
-            <li className="grey-text text-lighten-3 social"><a className="social-btn" href="https://www.facebook.com/cheri.creativecelebrations/" target="_blank"><FontAwesome name="facebook-square" size="2x"/></a></li>
-            <li className="grey-text text-lighten-3 social"><a className="social-btn" href="https://www.instagram.com/clrw70/" target="_blank"><FontAwesome name="instagram" size="2x"/></a></li>
-            <li className="grey-text text-lighten-3 social"><a className="social-btn" href="https://www.pinterest.com/chericreativece/" target="_blank"><FontAwesome name="pinterest-square" size="2x"/></a></li>
-            <li className="grey-text text-lighten-3 social"><a className="social-btn" href="" target="_blank"><FontAwesome name="twitter-square" size="2x"/></a></li>     
+            <li className="white-text social"><a className="social-btn" href="https://www.facebook.com/cheri.creativecelebrations/" target="_blank"><FontAwesome name="facebook-square" size="2x"/></a></li>
+            <li className="white-text social"><a className="social-btn" href="https://www.instagram.com/clrw70/" target="_blank"><FontAwesome name="instagram" size="2x"/></a></li>
+            <li className="white-text social"><a className="social-btn" href="https://www.pinterest.com/chericreativece/" target="_blank"><FontAwesome name="pinterest-square" size="2x"/></a></li>
+            <li className="white-text social"><a className="social-btn" href="" target="_blank"><FontAwesome name="twitter-square" size="2x"/></a></li>     
           </ul>
           <li><a className="grey-text text-lighten-3" href="#/about" onTouchTap={this.onContentChange}>About</a></li>
           <li><a className="grey-text text-lighten-3" href="#/balloons" onTouchTap={this.onContentChange}>Balloon Decorations</a></li>

@@ -19,6 +19,7 @@
     "react-slick": "^0.13.2",
     "react-tap-event-plugin": "^1.0.0",
     "slick-carousel": "^1.6.0"
+    "sweetalert2": "^5.3.8"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
