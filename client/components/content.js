@@ -45,22 +45,27 @@ class Content extends Component {
       dataType: 'json',
       type: 'POST',
       data: contactInfo,
-      success: function(data) {
-        console.log("data on successful ajax: ", data);
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(xhr, status, err.toString());
-        var message = "We're sorry! There was an error sending your message. Please try again later."
-        // alert("There was an error sending your message. Please try again later.");
-        swal("Oh no!", message, "error");
-      }.bind(this),
       complete: function(data, status) {
-        var message = data.responseJSON.message + "\n Thank you for contacting Cheri's Creative Celebrations. \nWe will get back to you soon.";
+        var message = '';
         if(status === "success"){
-          swal("Inquiry Submitted!", message, "success");
-        } else if (status === "error") {
-          message = "We're sorry! There was an error sending your message. Please try again later."
-          swal("Oh no!", message, "error");
+          message = data.responseJSON.message + "\n Thank you for contacting Cheri's Creative Celebrations. \nWe will get back to you soon.";
+          // swal("Inquiry Submitted!", message, "success");
+          swal({
+            title: "Inquiry Submitted!",
+            text: message,
+            type: "success",
+            allowOutsideClick: true
+          });
+        } else {
+          message = "We're sorry! There was an error sending your message." + ' ' + data.responseText;
+          // swal("Oh no!", message, "error");
+          swal({
+            title: "Oh no!",
+            text: message,
+            type: "error",
+            width: "60%",
+            allowOutsideClick: false
+          });
         }
       }
     });
