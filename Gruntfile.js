@@ -64,7 +64,7 @@ module.exports = function(grunt){
     },
     watch: {
       //files to keep an eye on, in this case all files that are listed in the jshint task
-      files: ['<%= eslint.target %>'],
+      files: ['<%= eslint.target %>', '/client/styles.css'],
       //tasks to run when files stated above have changed
       tasks: ['babel', 'eslint', 'browserify'],
       options: {

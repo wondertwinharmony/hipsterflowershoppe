@@ -134,9 +134,9 @@ class Content extends Component {
         </div>
           <Row>
             <Col s={12} m={12} l={12} className='navButtonsCenter'>
-              <Button className='navButton' waves='light' href="#/" onTouchTap={this.onContentChange}>Home</Button>
-              <Button className='navButton' waves='light' href="#/about" onTouchTap={this.onContentChange}>About</Button>
-              <Dropdown className='navButton' waves='light' trigger={
+              <Button className='navButton teal lighten-1' waves='light' href="#/" onTouchTap={this.onContentChange}>Home</Button>
+              <Button className='navButton teal lighten-1' waves='light' href="#/about" onTouchTap={this.onContentChange}>About</Button>
+              <Dropdown className='navButton teal lighten-1' waves='light' trigger={
               <Button waves='light'>Balloon Decor</Button>
                 }>
                 <NavItem href="#/customCreations" onTouchTap={this.onContentChange}>Custom Creations</NavItem>
@@ -148,7 +148,7 @@ class Content extends Component {
                 <NavItem href="#/drops" onTouchTap={this.onContentChange}>Drops</NavItem>
               </Dropdown>
               <Dropdown trigger={
-              <Button className='navButton' waves='light'>Floral Designs</Button>
+              <Button className='navButton teal lighten-1' waves='light'>Floral Designs</Button>
                 }>
                 <NavItem href="#/weddings" onTouchTap={this.onContentChange}>Weddings</NavItem>
                 <NavItem href="#/sympathyDesigns" onTouchTap={this.onContentChange}>Sympathy Designs</NavItem>
@@ -157,7 +157,7 @@ class Content extends Component {
                 <NavItem href="#/arrangements" onTouchTap={this.onContentChange}>Arrangements</NavItem>
                 <NavItem href="#/leis" onTouchTap={this.onContentChange}>Leis</NavItem>
               </Dropdown>
-              <Button className='navButton' waves='light' href="#/contact" onTouchTap={this.onContentChange}>Contact</Button>
+              <Button className='navButton teal lighten-1' waves='light' href="#/contact" onTouchTap={this.onContentChange}>Contact</Button>
             </Col>
           </Row>
       </div>

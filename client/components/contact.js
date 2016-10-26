@@ -69,7 +69,7 @@ class ContactForm extends Component {
             <Input id="last" s={6} label="Last Name" type="text" value={this.state.last} onChange={this.onInputChange} validate required/>
             <Input id="email" s={6} label="Email Address" type="email" value={this.state.email} onChange={this.onInputChange} validate required/>
             <Input id="subject" s={12} label="Subject" type="text" value={this.state.subject} onChange={this.onInputChange} validate/>
-            <Input id="message" s={12} label="Message" type="textarea" value={this.state.message} onChange={this.onInputChange} maxLength="1075" validate required/>
+            <Input id="message" s={12} label="Message" type="textarea" value={this.state.message} onChange={this.onInputChange} maxLength="1200" validate required/>
           </Row>
           <Button className="submitButton" waves="light" type="submit" value="Post">Submit</Button>
         </form>
