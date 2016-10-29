@@ -16,10 +16,8 @@ const SimpleSlider = React.createClass({
       <div id="balloons-content">
         <span>Parade Floats</span>
         <Slider {...settings}>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
+          <div><img src='/assets/balloonAssets/paradeFloats/parade1.jpg' /></div>
+          <div><img src='/assets/balloonAssets/paradeFloats/parade2.jpg' /></div>
         </Slider>
       </div>
     );

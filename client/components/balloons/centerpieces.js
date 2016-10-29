@@ -16,10 +16,13 @@ const SimpleSlider = React.createClass({
       <div id="balloons-content">
         <span>Centerpieces</span>
         <Slider {...settings}>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
+          <div><img src='/assets/balloonAssets/centerpieces/centerpiece1.jpg' /></div>
+          <div><img src='/assets/balloonAssets/centerpieces/centerpiece2.jpg' /></div>
+          <div><img src='/assets/balloonAssets/centerpieces/centerpiece3.jpg' /></div>
+          <div><img src='/assets/balloonAssets/centerpieces/centerpiece4.jpg' /></div>
+          <div><img src='/assets/balloonAssets/centerpieces/centerpiece5.jpg' /></div>
+          <div><img src='/assets/balloonAssets/centerpieces/centerpiece6.jpg' /></div>
+          <div><img src='/assets/balloonAssets/centerpieces/centerpiece7.jpg' /></div>
         </Slider>
       </div>
     );
