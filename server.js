@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 //set the port
-var port = process.env.PORT || 7000;
+// var port = process.env.PORT || 7000;
 
 /**
  * Back end routing set up here
@@ -62,5 +62,6 @@ app.post('/contact', function(req, res){
 app.use(express.static(__dirname + '/client'));
 
 //start server
-app.listen(port);
-console.log('Website is live at port: ', port);
+app.listen(process.env.PORT || 7000, function(){
+  console.log('Website is live at port: ', port);
+});
