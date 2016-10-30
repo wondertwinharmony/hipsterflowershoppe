@@ -16,12 +16,14 @@ const SimpleSlider = React.createClass({
     return (
       <div id="balloons-content">
         <div id="sliderContainer">
-        <span>Custom Creations</span>
+          <span>Nobody can be uncheered with a balloon.
+          <br />
+          ~A.A. Milne (Winnie-the-Pooh)
+          </span>
         <Slider {...settings}>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
+          <div><img src='/assets/balloonAssets/customCreations/custom1.jpg' /></div>
+          <div><img src='/assets/balloonAssets/customCreations/custom2.jpg' /></div>
+          <div><img src='/assets/balloonAssets/customCreations/custom3.jpg' /></div>
         </Slider>
         </div>
       </div>

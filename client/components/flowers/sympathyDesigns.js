@@ -18,10 +18,12 @@ const SimpleSlider = React.createClass({
       <div id="flowers-content">
         <span>Sympathy Designs</span>
         <Slider className="sliderImg" {...settings}>
-          <div><img src='../assets/Flowers1.jpg' /></div>
-          <div><img src='../assets/Flowers2.jpg' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy1.jpg' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy2.jpg' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy3.jpg' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy4.jpg' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy5.jpg' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy6.jpg' /></div>
         </Slider>
       </div>
     );

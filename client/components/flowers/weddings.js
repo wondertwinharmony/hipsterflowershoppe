@@ -17,12 +17,24 @@ const SimpleSlider = React.createClass({
     };
     return (
       <div id="flowers-content">
-        <span>Weddings</span>
+          <span>A day without flowers is like a heart without memories.
+          <br />
+          ~Carolyn Ericson
+          </span>
         <Slider className="sliderImg" {...settings}>
-          <div><img src='../assets/Flowers1.jpg' /></div>
-          <div><img src='../assets/Flowers2.jpg' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding1.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding2.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding3.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding4.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding5.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding6.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding7.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding8.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding9.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding10.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding11.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding12.jpg' /></div>
+          <div><img src='/assets/flowerAssets/weddings/wedding13.jpg' /></div>
         </Slider>
       </div>
     );

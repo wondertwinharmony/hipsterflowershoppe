@@ -18,10 +18,14 @@ const SimpleSlider = React.createClass({
       <div id="flowers-content">
         <span>Corsages & Boutonnieres</span>
         <Slider className="sliderImg" {...settings}>
-          <div><img src='../assets/Flowers1.jpg' /></div>
-          <div><img src='../assets/Flowers2.jpg' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
+          <div><img src='../assets/flowerAssets/corsagesBoutonnieres/cb1.jpg' /></div>
+          <div><img src='../assets/flowerAssets/corsagesBoutonnieres/cb2.jpg' /></div>
+          <div><img src='../assets/flowerAssets/corsagesBoutonnieres/cb3.jpg' /></div>
+          <div><img src='../assets/flowerAssets/corsagesBoutonnieres/cb4.jpg' /></div>
+          <div><img src='../assets/flowerAssets/corsagesBoutonnieres/cb5.jpg' /></div>
+          <div><img src='../assets/flowerAssets/corsagesBoutonnieres/cb6.jpg' /></div>
+          <div><img src='../assets/flowerAssets/corsagesBoutonnieres/cb7.jpg' /></div>
+          <div><img src='../assets/flowerAssets/corsagesBoutonnieres/cb8.jpg' /></div>
         </Slider>
       </div>
     );
