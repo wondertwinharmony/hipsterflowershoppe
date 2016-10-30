@@ -17,7 +17,9 @@
 
 div.logoContainer {
 /*  background-image: url("http://image.shutterstock.com/display_pic_with_logo/3663356/398534419/stock-vector-amazing-floral-pattern-with-bright-colorful-flowers-plants-branches-and-berries-on-a-black-398534419.jpg");*/
-  background-image: url("assets/stockalter4.png");
+/*  background-image: url("assets/bggraphic.jpg");*/
+  background-image: url("assets/bggraphic.png");
+/*  background-image: url("assets/stockalter4.png");*/
   background-size: contain;
 }
 
@@ -170,7 +172,7 @@ p.webdevs > a {
   text-transform: uppercase;
   font-family: 'Wendy One', sans-serif;
   font-size: 4.8em;
-  color: white;
+  color: floralwhite;
   position: relative;
   top: 30px;
   left: 50%;
@@ -438,7 +440,7 @@ p.webdevs > a {
 .title {
   position: relative;
   text-align: center;
-  color: white;
+  color: floralwhite;
   font-size: 4.5em;
   font-family: 'Wendy One', sans-serif;
   text-shadow: -2px 0 black, 

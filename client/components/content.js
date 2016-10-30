@@ -12,14 +12,10 @@ import Centerpieces from './balloons/centerpieces.js';
 import Arches from './balloons/arches.js';
 import Columns from './balloons/columns.js';
 import ParadeFloats from './balloons/paradeFloats.js';
-import Bouquets from './balloons/bouquets.js';
-import Drops from './balloons/drops.js';
 import Weddings from './flowers/weddings.js';
 import SympathyDesigns from './flowers/sympathyDesigns.js';
 import CorsagesBoutonnieres from './flowers/corsagesBoutonnieres.js';
-import AnniversaryParties from './flowers/anniversaryParties.js';
 import Arrangements from './flowers/arrangements.js';
-import Leis from './flowers/leis.js';
 import Contact from './contact.js';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -89,22 +85,14 @@ class Content extends Component {
       partial = <Columns />;
     } else if (this.state.currentPage === '#/paradeFloats') {
       partial = <ParadeFloats />;
-    } else if (this.state.currentPage === '#/bouquets') {
-      partial = <Bouquets />;
-    } else if (this.state.currentPage === '#/drops') {
-      partial = <Drops />;
     } else if (this.state.currentPage === '#/weddings') {
       partial = <Weddings />;
     } else if (this.state.currentPage === '#/sympathyDesigns') {
       partial = <SympathyDesigns />;
     } else if (this.state.currentPage === '#/corsagesBoutonnieres') {
       partial = <CorsagesBoutonnieres />;
-    } else if (this.state.currentPage === '#/anniversaryParties') {
-      partial = <AnniversaryParties />;
     } else if (this.state.currentPage === '#/arrangements') {
       partial = <Arrangements />;
-    } else if (this.state.currentPage === '#/leis') {
-      partial = <Leis />;
     } else if (this.state.currentPage === '#/contact') {
       partial = <Contact onContactSubmit={this.handleContactFormSubmit}/>;
     }
@@ -144,8 +132,6 @@ class Content extends Component {
                 <NavItem href="#/arches" onTouchTap={this.onContentChange}>Arches</NavItem>
                 <NavItem href="#/columns" onTouchTap={this.onContentChange}>Columns</NavItem>
                 <NavItem href="#/paradeFloats" onTouchTap={this.onContentChange}>Parade Floats</NavItem>
-                <NavItem href="#/bouquets" onTouchTap={this.onContentChange}>Bouquets</NavItem>
-                <NavItem href="#/drops" onTouchTap={this.onContentChange}>Drops</NavItem>
               </Dropdown>
               <Dropdown trigger={
               <Button className='navButton teal lighten-1' waves='light'>Floral Designs</Button>
@@ -153,9 +139,7 @@ class Content extends Component {
                 <NavItem href="#/weddings" onTouchTap={this.onContentChange}>Weddings</NavItem>
                 <NavItem href="#/sympathyDesigns" onTouchTap={this.onContentChange}>Sympathy Designs</NavItem>
                 <NavItem href="#/corsagesBoutonnieres" onTouchTap={this.onContentChange}>Corsages & Boutonnieres</NavItem>
-                <NavItem href="#/anniversaryParties" onTouchTap={this.onContentChange}>Anniversary Parties</NavItem>
                 <NavItem href="#/arrangements" onTouchTap={this.onContentChange}>Arrangements</NavItem>
-                <NavItem href="#/leis" onTouchTap={this.onContentChange}>Leis</NavItem>
               </Dropdown>
               <Button className='navButton teal lighten-1' waves='light' href="#/contact" onTouchTap={this.onContentChange}>Contact</Button>
             </Col>

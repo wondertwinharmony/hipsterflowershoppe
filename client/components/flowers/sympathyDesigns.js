@@ -19,6 +19,11 @@ const SimpleSlider = React.createClass({
         <span>Sympathy Designs</span>
         <Slider className="sliderImg" {...settings}>
           <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy1.jpg' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy2.jpg' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy3.jpg' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy4.jpg' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy5.jpg' /></div>
+          <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy6.jpg' /></div>
         </Slider>
       </div>
     );

@@ -21,7 +21,6 @@ const SimpleSlider = React.createClass({
           <div><img src='/assets/balloonAssets/columns/column3.jpg' /></div>
           <div><img src='/assets/balloonAssets/columns/column4.jpg' /></div>
           <div><img src='/assets/balloonAssets/columns/column5.jpg' /></div>
-          <div><img src='/assets/balloonAssets/columns/column6.jpg' /></div>
         </Slider>
       </div>
     );

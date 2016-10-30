@@ -18,10 +18,9 @@ const SimpleSlider = React.createClass({
       <div id="flowers-content">
         <span>Arrangements</span>
         <Slider className="sliderImg" {...settings}>
-          <div><img src='../assets/Flowers1.jpg' /></div>
-          <div><img src='../assets/Flowers2.jpg' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
+          <div><img src='../assets/flowerAssets/arrangements/arrangement1.jpg' /></div>
+          <div><img src='../assets/flowerAssets/arrangements/arrangement2.jpg' /></div>
+          <div><img src='../assets/flowerAssets/arrangements/arrangement3.jpg' /></div>
         </Slider>
       </div>
     );

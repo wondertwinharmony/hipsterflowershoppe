@@ -35,14 +35,6 @@ const SimpleSlider = React.createClass({
           <div><img src='/assets/flowerAssets/weddings/wedding11.jpg' /></div>
           <div><img src='/assets/flowerAssets/weddings/wedding12.jpg' /></div>
           <div><img src='/assets/flowerAssets/weddings/wedding13.jpg' /></div>
-          <div><img src='/assets/flowerAssets/weddings/wedding14.jpg' /></div>
-          <div><img src='/assets/flowerAssets/weddings/wedding15.jpg' /></div>
-          <div><img src='/assets/flowerAssets/weddings/wedding16.jpg' /></div>
-          <div><img src='/assets/flowerAssets/weddings/wedding17.jpg' /></div>
-          <div><img src='/assets/flowerAssets/weddings/wedding18.jpg' /></div>
-          <div><img src='/assets/flowerAssets/weddings/wedding19.jpg' /></div>
-          <div><img src='/assets/flowerAssets/weddings/wedding20.jpg' /></div>
-          <div><img src='/assets/flowerAssets/weddings/wedding21.jpg' /></div>
         </Slider>
       </div>
     );
