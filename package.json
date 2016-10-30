@@ -1,10 +1,7 @@
 {
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "grunt default"
-  },
-  "engines": {
-    "node": "6.0.0"
+    "postinstall": "grunt default",
+    "start": "node server.js"
   },
   "engines": {
     "node": "6.0.0"
