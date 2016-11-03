@@ -152,21 +152,14 @@ class Content extends Component {
           <ul>
             <li className="white-text social"><a className="social-btn" href="https://www.facebook.com/cheri.creativecelebrations/" target="_blank"><FontAwesome name="facebook-square" size="2x"/></a></li>
             <li className="white-text social"><a className="social-btn" href="https://www.instagram.com/clrw70/" target="_blank"><FontAwesome name="instagram" size="2x"/></a></li>
-            <li className="white-text social"><a className="social-btn" href="https://www.pinterest.com/chericreativece/" target="_blank"><FontAwesome name="pinterest-square" size="2x"/></a></li>
-            <li className="white-text social"><a className="social-btn" href="" target="_blank"><FontAwesome name="twitter-square" size="2x"/></a></li>     
-          </ul>
-          <li><a className="grey-text text-lighten-3" href="#/about" onTouchTap={this.onContentChange}>About</a></li>
-          <li><a className="grey-text text-lighten-3" href="#/balloons" onTouchTap={this.onContentChange}>Balloon Decorations</a></li>
-          <li><a className="grey-text text-lighten-3" href="#/flowers" onTouchTap={this.onContentChange}>Floral Designs</a></li>
-          <li><a className="grey-text text-lighten-3" href="#/contact" onTouchTap={this.onContentChange}>Contact Info</a></li>
-        </ul>
+            <li className="white-text social"><a className="social-btn" href="https://www.pinterest.com/chericreativece/" target="_blank"><FontAwesome name="pinterest-square" size="2x"/></a></li>    
       }>
         <h5 className="white-text">Cheri's Creative Celebrations</h5>
         <p className="contact-footer">Located in Santa Rosa, CA</p>
         <p className="contact-footer">Available by appointment</p>
         <p className="contact-footer">Cheri Winter</p>
-        <p className="contact-footer">Phone: (707)###-####</p>
-        <p className="contact-footer">Email: cheri.creativecelebrations@example.com</p>
+        <p className="contact-footer">Phone: (707)387-4138</p>
+        <p className="contact-footer">Email: cheri.creativecelebrations@gmail.com</p>
         <p className="photographers">
         Photos provided by <a href="https://www.facebook.com/AudraVonGlahnPhotography" target="_blank">Audra Von Glahn Photography</a>, <a href="https://www.facebook.com/MindyBreslinPhotography" target="_blank">Mindy Breslin Photography</a>, <a href="http://www.foothillphotographyonline.com/" target="_blank">Foothill Photography</a>, and <a href="http://www.rachellomeli.com/" target="_blank">Rachel Lomeli Photography</a>
         </p>
@@ -179,19 +172,3 @@ class Content extends Component {
 }
 
 ReactDOM.render(<Content />, document.getElementById('content'));
-
-/**
-  Need to decide which of these to use in final title implementation
-  http://casablancasunset.com/wp-content/uploads/2013/12/washed-out-paracosm.jpg
-  https://s3-us-west-2.amazonaws.com/s.cdpn.io/131611/flower-bloom.gif
-    
-        <svg id="white">
-            <text x="0" y="0">
-              <tspan x="1.2em" y="2.0em">CREATIVE CELEBRATIONS</tspan>
-            </text>
-            <pattern id="white-pattern" patternUnits="userSpaceOnUse"
-                       width="500" height="281" viewbox="0 0 500 281">
-              <image href="  http://casablancasunset.com/wp-content/uploads/2013/12/washed-out-paracosm.jpg" width="500" height="281" />
-            </pattern>
-          </svg>
- */
