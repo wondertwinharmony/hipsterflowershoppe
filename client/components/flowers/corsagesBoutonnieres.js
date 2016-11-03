@@ -16,7 +16,6 @@ const SimpleSlider = React.createClass({
     };
     return (
       <div id="flowers-content">
-        <span>Corsages & Boutonnieres</span>
         <Slider className="sliderImg" {...settings}>
           <div><img src='../assets/flowerAssets/corsagesBoutonnieres/cb1.jpg' /></div>
           <div><img src='../assets/flowerAssets/corsagesBoutonnieres/cb2.jpg' /></div>

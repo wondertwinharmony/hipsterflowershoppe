@@ -14,7 +14,6 @@ const SimpleSlider = React.createClass({
     };
     return (
       <div id="balloons-content">
-        <span>Centerpieces</span>
         <Slider {...settings}>
           <div><img src='/assets/balloonAssets/centerpieces/center1.jpg' /></div>
           <div><img src='/assets/balloonAssets/centerpieces/center2.jpg' /></div>
