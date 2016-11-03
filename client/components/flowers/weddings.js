@@ -15,10 +15,10 @@ const SimpleSlider = React.createClass({
     };
     return (
       <div id="flowers-content">
-          <span>A day without flowers is like a heart without memories.
+          <p className="quote">""A day without flowers is like a heart without memories.""
           <br />
           ~Carolyn Ericson
-          </span>
+          </p>
         <Slider className="sliderImg" {...settings}>
           <div><img src='/assets/flowerAssets/weddings/wedding1.jpg' /></div>
           <div><img src='/assets/flowerAssets/weddings/wedding2.jpg' /></div>

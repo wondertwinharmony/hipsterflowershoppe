@@ -33,6 +33,10 @@ div.smartBalloonContainer {
   float: right;
 }
 
+p.quote {
+  text-align: center;
+  color: #6f6a76;
+}
 /*#slideContainer {
   width: 980px;
   height: 100%;
