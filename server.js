@@ -2,9 +2,9 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var hidden = require('./private/private.js');
-var mailgun = require('mailgun-js')({apiKey: hidden.MAILGUN_KEY , domain: hidden.MAILGUN_DOMAIN});
-var validator = require('mailgun-validate-email')(hidden.MAILGUN_PUBKEY);
+// var hidden = require('./private/private.js');
+var mailgun = require('mailgun-js')({apiKey: process.env.MAILGUN_KEY , domain: process.env.MAILGUN_DOMAIN});
+var validator = require('mailgun-validate-email')(process.env.MAILGUN_PUBKEY);
 
 
 //configure the server to use bodyparser to handle post requests
