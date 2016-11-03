@@ -16,10 +16,10 @@ const SimpleSlider = React.createClass({
     return (
       <div id="balloons-content">
         <div id="sliderContainer">
-          <span>Nobody can be uncheered with a balloon.
+          <p className="quote">""Nobody can be uncheered with a balloon.""
           <br />
           ~A.A. Milne (Winnie-the-Pooh)
-          </span>
+          </p>
         <Slider {...settings}>
           <div><img src='/assets/balloonAssets/customCreations/custom1.jpg' /></div>
           <div><img src='/assets/balloonAssets/customCreations/custom2.jpg' /></div>

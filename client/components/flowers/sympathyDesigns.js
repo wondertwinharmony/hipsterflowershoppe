@@ -8,15 +8,12 @@ const SimpleSlider = React.createClass({
       dots: true,
       infinite: true,
       speed: 500,
-      adaptiveHeight: true,
-      fade: true,
-      centerMode: true,
+      centerMode: false,
       slidesToShow: 1,
       slidesToScroll: 1
     };
     return (
       <div id="flowers-content">
-        <span>Sympathy Designs</span>
         <Slider className="sliderImg" {...settings}>
           <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy1.jpg' /></div>
           <div><img src='/assets/flowerAssets/sympathyDesigns/sympathy2.jpg' /></div>
