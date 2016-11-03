@@ -9,9 +9,7 @@ const SimpleSlider = React.createClass({
       dots: true,
       infinite: true,
       speed: 500,
-      adaptiveHeight: true,
-      fade: true,
-      centerMode: true,
+      centerMode: false,
       slidesToShow: 1,
       slidesToScroll: 1
     };
