@@ -152,7 +152,9 @@ class Content extends Component {
           <ul>
             <li className="white-text social"><a className="social-btn" href="https://www.facebook.com/cheri.creativecelebrations/" target="_blank"><FontAwesome name="facebook-square" size="2x"/></a></li>
             <li className="white-text social"><a className="social-btn" href="https://www.instagram.com/clrw70/" target="_blank"><FontAwesome name="instagram" size="2x"/></a></li>
-            <li className="white-text social"><a className="social-btn" href="https://www.pinterest.com/chericreativece/" target="_blank"><FontAwesome name="pinterest-square" size="2x"/></a></li>    
+            <li className="white-text social"><a className="social-btn" href="https://www.pinterest.com/chericreativece/" target="_blank"><FontAwesome name="pinterest-square" size="2x"/></a></li>
+            </ul>
+          </ul>    
       }>
         <h5 className="white-text">Cheri's Creative Celebrations</h5>
         <p className="contact-footer">Located in Santa Rosa, CA</p>
