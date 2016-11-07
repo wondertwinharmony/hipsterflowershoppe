@@ -8,6 +8,10 @@
   height: 530px;
 }
 
+#contact-content {
+  padding: 0px 192px 0px 192px;
+}
+
 #balloons-content,
 #flowers-content {
   padding: 0px 100px 0px 100px;
