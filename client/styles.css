@@ -2,8 +2,7 @@
  * NavBar Styling
  */
 #about-content,
-#home-content,
-#contact-content {
+#home-content {
   padding: 0px 192px 0px 192px;
   height: 530px;
 }
