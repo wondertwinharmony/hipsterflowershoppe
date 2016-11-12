@@ -11,11 +11,26 @@
   padding: 0px 192px 0px 192px;
 }
 
-#balloons-content,
-#flowers-content {
+#flowers-content,
+#balloons-content {
+  display: -webkit-box;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#Gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0px 100px 0px 100px;
-/*  margin: 0 auto;
-  color: #333;*/
+}
+
+div.galleryContainer {
+  display: block;
+  width: 85%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  overflow: auto;
+  margin: 0 auto;
 }
 
 div.logoContainer {
