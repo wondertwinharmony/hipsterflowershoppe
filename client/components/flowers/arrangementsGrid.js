@@ -79,13 +79,6 @@ ImgGallery.defaultProps = {
             thumbnailWidth: 375,
             thumbnailHeight: 500,
             caption: ""
-        },
-        {
-            src: "../assets/flowerAssets/arrangements/EllenRipbro.png",
-            thumbnail: "../assets/flowerAssets/arrangements/EllenRipbro.png",
-            thumbnailWidth: 500,
-            thumbnailHeight: 500,
-            caption: ""
         }
     ]
 };
