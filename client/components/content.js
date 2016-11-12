@@ -7,15 +7,24 @@ import { default as swal } from 'sweetalert2';
 import FontAwesome from 'react-fontawesome';
 import Home from './home.js';
 import About from './about.js';
-import CustomCreations from './balloons/customCreations.js';
-import Centerpieces from './balloons/centerpieces.js';
-import Arches from './balloons/arches.js';
-import Columns from './balloons/columns.js';
-import ParadeFloats from './balloons/paradeFloats.js';
-import Weddings from './flowers/weddings.js';
-import SympathyDesigns from './flowers/sympathyDesigns.js';
-import CorsagesBoutonnieres from './flowers/corsagesBoutonnieres.js';
-import Arrangements from './flowers/arrangements.js';
+// import CustomCreations from './balloons/customCreations.js';
+// import Centerpieces from './balloons/centerpieces.js';
+// import Arches from './balloons/arches.js';
+// import Columns from './balloons/columns.js';
+// import ParadeFloats from './balloons/paradeFloats.js';
+// import Weddings from './flowers/weddings.js';
+// import SympathyDesigns from './flowers/sympathyDesigns.js';
+// import CorsagesBoutonnieres from './flowers/corsagesBoutonnieres.js';
+// import Arrangements from './flowers/arrangements.js';
+import ArrangementsGrid from './flowers/arrangementsGrid.js';
+import CorsagesBoutonnieresGrid from './flowers/corsagesBoutonnieresGrid.js';
+import SympathyDesignsGrid from './flowers/sympathyDesignsGrid.js';
+import WeddingsGrid from './flowers/weddingsGrid.js';
+import ArchesGrid from './balloons/archesGrid.js';
+import CenterpiecesGrid from './balloons/centerpiecesGrid.js';
+import ColumnsGrid from './balloons/columnsGrid.js';
+import CustomCreationsGrid from './balloons/customCreationsGrid.js';
+import ParadeFloatsGrid from './balloons/paradeFloatsGrid.js';
 import Contact from './contact.js';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -76,23 +85,23 @@ class Content extends Component {
     } else if (this.state.currentPage === '#/about') {
       partial = <About />;
     } else if (this.state.currentPage === '#/customCreations') {
-      partial = <CustomCreations />;
+      partial = <CustomCreationsGrid />;
     } else if (this.state.currentPage === '#/centerpieces') {
-      partial = <Centerpieces />;
+      partial = <CenterpiecesGrid />;
     } else if (this.state.currentPage === '#/arches') {
-      partial = <Arches />;
+      partial = <ArchesGrid />;
     } else if (this.state.currentPage === '#/columns') {
-      partial = <Columns />;
+      partial = <ColumnsGrid />;
     } else if (this.state.currentPage === '#/paradeFloats') {
-      partial = <ParadeFloats />;
+      partial = <ParadeFloatsGrid />;
     } else if (this.state.currentPage === '#/weddings') {
-      partial = <Weddings />;
+      partial = <WeddingsGrid />;
     } else if (this.state.currentPage === '#/sympathyDesigns') {
-      partial = <SympathyDesigns />;
+      partial = <SympathyDesignsGrid />;
     } else if (this.state.currentPage === '#/corsagesBoutonnieres') {
-      partial = <CorsagesBoutonnieres />;
+      partial = <CorsagesBoutonnieresGrid />;
     } else if (this.state.currentPage === '#/arrangements') {
-      partial = <Arrangements />;
+      partial = <ArrangementsGrid />;
     } else if (this.state.currentPage === '#/contact') {
       partial = <Contact onContactSubmit={this.handleContactFormSubmit}/>;
     }
