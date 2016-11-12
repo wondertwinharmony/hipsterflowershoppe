@@ -160,7 +160,7 @@ class Content extends Component {
           <h5 className="white-text">Follow Us On</h5>
           <ul>
             <li className="white-text social"><a className="social-btn" href="https://www.facebook.com/cheri.creativecelebrations/" target="_blank"><FontAwesome name="facebook-square" size="2x"/></a></li>
-            <li className="white-text social"><a className="social-btn" href="https://www.instagram.com/clrw70/" target="_blank"><FontAwesome name="instagram" size="2x"/></a></li>
+            <li className="white-text social"><a className="social-btn" href="https://www.instagram.com/creativeceles/" target="_blank"><FontAwesome name="instagram" size="2x"/></a></li>
             <li className="white-text social"><a className="social-btn" href="https://www.pinterest.com/chericreativece/" target="_blank"><FontAwesome name="pinterest-square" size="2x"/></a></li>
             </ul>
           </ul>    
