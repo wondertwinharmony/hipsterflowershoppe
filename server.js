@@ -33,7 +33,7 @@ app.post('/contact', function(req, res){
       if(result.is_valid){
         var mailOptions = {
           from: '"' + req.body.first + " " + req.body.last + '"' + ' ' + req.body.email,
-          to: "gabrielschrock@gmail.com",
+          to: "cheri.creativecelebrations@gmail.com",
           subject: req.body.first + " " + req.body.last + " - " + req.body.subject,
           text: req.body.message + "\n" + req.body.first + " " + req.body.last
         };
