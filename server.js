@@ -4,8 +4,8 @@ var app = express();
 var bodyParser = require('body-parser');
 var path = require('path');
 // var hidden = require('./private/private.js');
-var mailgun = require('mailgun-js')({apiKey: process.en.MAILGUN_KEY, domain: process.en.MAILGUN_DOMAIN});
-var validator = require('mailgun-validate-email')(process.en.MAILGUN_PUBKEY);
+var mailgun = require('mailgun-js')({apiKey: process.env.MAILGUN_KEY, domain: process.env.MAILGUN_DOMAIN});
+var validator = require('mailgun-validate-email')(process.env.MAILGUN_PUBKEY);
 
 //configure the server to use bodyparser to handle post requests
 app.use(bodyParser.urlencoded({extended: true}));
