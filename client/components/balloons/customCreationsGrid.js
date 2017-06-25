@@ -79,6 +79,20 @@ ImgGallery.defaultProps = {
             thumbnailWidth: 673,
             thumbnailHeight: 500,
             caption: ""
+        },
+        {
+            src: "../assets/balloonAssets/customCreations/custom4.jpg",
+            thumbnail: "../assets/balloonAssets/customCreations/custom4.jpg",
+            thumbnailWidth: 498,
+            thumbnailHeight: 500,
+            caption: ""
+        },
+        {
+            src: "../assets/balloonAssets/customCreations/custom5.jpg",
+            thumbnail: "../assets/balloonAssets/customCreations/custom5.jpg",
+            thumbnailWidth: 667,
+            thumbnailHeight: 500,
+            caption: ""
         }
     ]
 };
