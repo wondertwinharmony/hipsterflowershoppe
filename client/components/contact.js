@@ -2,6 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import $ from 'jquery';
 import { Row, Input, Button } from 'react-materialize';
+import { default as swal } from 'sweetalert2';
 
 class ContactForm extends Component {
   constructor(props) {
@@ -17,6 +18,7 @@ class ContactForm extends Component {
 
     this.onInputChange = this.onInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleContactFormSubmit = this.handleContactFormSubmit.bind(this);
   }
 
   onInputChange() {
@@ -31,6 +33,38 @@ class ContactForm extends Component {
     });
   }
 
+  handleContactFormSubmit(contactInfo) {
+    $.ajax({
+      url: '/contact',
+      dataType: 'json',
+      type: 'POST',
+      data: contactInfo,
+      complete: function(data, status) {
+        var message = '';
+        if(status === "success"){
+          message = data.responseJSON.message + "\n Thank you for contacting Cheri's Creative Celebrations. \nWe will get back to you soon.";
+          // swal("Inquiry Submitted!", message, "success");
+          swal({
+            title: "Inquiry Submitted!",
+            text: message,
+            type: "success",
+            allowOutsideClick: true
+          });
+        } else {
+          message = "We're sorry! There was an error sending your message." + ' ' + data.responseText;
+          // swal("Oh no!", message, "error");
+          swal({
+            title: "Oh no!",
+            text: message,
+            type: "error",
+            width: "60%",
+            allowOutsideClick: false
+          });
+        }
+      }
+    });
+  }
+
   handleSubmit(event) {
     event.preventDefault();
     
@@ -40,7 +74,7 @@ class ContactForm extends Component {
     var subject = this.state.subject.trim();
     var message = this.state.message.trim();
 
-    this.props.onContactSubmit({
+    this.handleContactFormSubmit({
       first: first,
       last: last,
       email: email,
