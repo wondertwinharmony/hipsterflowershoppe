@@ -41,23 +41,21 @@ class ContactForm extends Component {
       data: contactInfo,
       complete: function(data, status) {
         var message = '';
-        if(status === "success"){
+        if(status === 'success'){
           message = data.responseJSON.message + "\n Thank you for contacting Cheri's Creative Celebrations. \nWe will get back to you soon.";
-          // swal("Inquiry Submitted!", message, "success");
           swal({
-            title: "Inquiry Submitted!",
+            title: 'Inquiry Submitted!',
             text: message,
-            type: "success",
+            type: 'success',
             allowOutsideClick: true
           });
         } else {
           message = "We're sorry! There was an error sending your message." + ' ' + data.responseText;
-          // swal("Oh no!", message, "error");
           swal({
-            title: "Oh no!",
+            title: 'Oh no!',
             text: message,
-            type: "error",
-            width: "60%",
+            type: 'error',
+            width: '60%',
             allowOutsideClick: false
           });
         }
