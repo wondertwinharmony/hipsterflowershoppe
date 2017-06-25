@@ -60,37 +60,16 @@ ImgGallery.propTypes = {
 ImgGallery.defaultProps = {
     images: [
         {
-            src: "../assets/balloonAssets/customCreations/custom1.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom1.jpg",
-            thumbnailWidth: 373,
-            thumbnailHeight: 500,
-            caption: ""
-        },
-        {
-            src: "../assets/balloonAssets/customCreations/custom2.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom2.jpg",
+            src: "../assets/balloonAssets/photoframes/frame1.jpg",
+            thumbnail: "../assets/balloonAssets/photoframes/frame1.jpg",
             thumbnailWidth: 375,
             thumbnailHeight: 500,
             caption: ""
         },
         {
-            src: "../assets/balloonAssets/customCreations/custom3.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom3.jpg",
-            thumbnailWidth: 673,
-            thumbnailHeight: 500,
-            caption: ""
-        },
-        {
-            src: "../assets/balloonAssets/customCreations/custom4.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom4.jpg",
-            thumbnailWidth: 498,
-            thumbnailHeight: 500,
-            caption: ""
-        },
-        {
-            src: "../assets/balloonAssets/customCreations/custom5.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom5.jpg",
-            thumbnailWidth: 667,
+            src: "../assets/balloonAssets/photoframes/frame2.jpg",
+            thumbnail: "../assets/balloonAssets/photoframes/frame2.jpg",
+            thumbnailWidth: 375,
             thumbnailHeight: 500,
             caption: ""
         }

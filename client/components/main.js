@@ -53,6 +53,9 @@ class Main extends Component {
                         <NavItem>
                           <Link to="/balloondecor/floats">Parade Floats</Link>
                         </NavItem>
+                        <NavItem>
+                          <Link to="/balloondecor/frames">Photo Frames</Link>
+                        </NavItem>
                       </Dropdown>
                       <Dropdown trigger={
                       <Button className='navButton teal lighten-1' waves='light'>Floral Designs</Button>

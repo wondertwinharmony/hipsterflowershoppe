@@ -12,6 +12,7 @@ import Columns from './balloons/columnsGrid.js';
 import CustomCreations from './balloons/customCreationsGrid.js';
 import ParadeFloats from './balloons/paradeFloatsGrid.js';
 import Centerpieces from './balloons/centerpiecesGrid.js';
+import PhotoFrames from './balloons/photoFramesGrid.js';
 import FlowerArrangements from './flowers/arrangementsGrid.js';
 import CorsagesBoutonnieres from './flowers/corsagesBoutonnieresGrid.js';
 import SympathyDesigns from './flowers/sympathyDesignsGrid.js';
@@ -28,6 +29,7 @@ render (
         <Route path="/balloondecor/custom" component={CustomCreations}/>
         <Route path="/balloondecor/floats" component={ParadeFloats}/>
         <Route path="/balloondecor/centerpieces" component={Centerpieces}/>
+        <Route path="/balloondecor/frames" component={PhotoFrames}/>
         <Route path="/floraldesigns/arrangements" component={FlowerArrangements}/>
         <Route path="/floraldesigns/corsagesboutonnieres" component={CorsagesBoutonnieres}/>
         <Route path="/floraldesigns/sympathy" component={SympathyDesigns}/>
