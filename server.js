@@ -59,6 +59,11 @@ app.post('/contact', function(req, res){
 //serve static assets
 app.use(express.static(__dirname + '/client'));
 
+// Handles all routes to avoid getting not found error
+app.get('*', function (request, response){
+  response.sendFile(path.resolve(__dirname, 'client', 'index.html'))
+});
+
 //start server
 app.listen(port);
 console.log('Website is live at port: ', port);
