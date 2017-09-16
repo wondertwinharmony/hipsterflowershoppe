@@ -39,16 +39,19 @@ class Main extends Component {
                       <Button className='navButton teal lighten-1' waves='light'>Balloon Decor</Button>
                         }>
                         <NavItem>
-                          <Link to="/balloondecor/custom">Custom Creations</Link>
+                          <Link to="/balloondecor/arches">Arches</Link>
                         </NavItem>
                         <NavItem>
                           <Link to="/balloondecor/centerpieces">Centerpieces</Link>
                         </NavItem>
                         <NavItem>
-                          <Link to="/balloondecor/arches">Arches</Link>
+                          <Link to="/balloondecor/corporate">Corporate Events</Link>
                         </NavItem>
                         <NavItem>
                           <Link to="/balloondecor/columns">Columns</Link>
+                        </NavItem>
+                        <NavItem>
+                          <Link to="/balloondecor/custom">Custom Creations</Link>
                         </NavItem>
                         <NavItem>
                           <Link to="/balloondecor/floats">Parade Floats</Link>
@@ -61,16 +64,16 @@ class Main extends Component {
                       <Button className='navButton teal lighten-1' waves='light'>Floral Designs</Button>
                         }>
                         <NavItem>
-                          <Link to="/floraldesigns/weddings">Weddings</Link>
-                        </NavItem>
-                        <NavItem>
-                          <Link to="/floraldesigns/sympathy">Sympathy Designs</Link>
+                          <Link to="/floraldesigns/arrangements">Arrangements</Link>
                         </NavItem>
                         <NavItem>
                           <Link to="/floraldesigns/corsagesboutonnieres">Corsages & Boutonnieres</Link>
                         </NavItem>
                         <NavItem>
-                          <Link to="/floraldesigns/arrangements">Arrangements</Link>
+                          <Link to="/floraldesigns/sympathy">Sympathy Designs</Link>
+                        </NavItem>
+                        <NavItem>
+                          <Link to="/floraldesigns/weddings">Weddings</Link>
                         </NavItem>
                       </Dropdown>
                       <Link to="/contact" className='waves-effect waves-light btn'>Contact</Link>

@@ -30,7 +30,7 @@ export default class ImgGallery extends Component {
 
     render () {
         return (
-          <div className="flowers-content">
+          <div className="balloons-content">
                 <div className="galleryContainer" style={{ minHeight: "1px" }}>
                 <Gallery
             images={this.state.images}
@@ -90,6 +90,13 @@ ImgGallery.defaultProps = {
         {
             src: "../assets/balloonAssets/columns/column5.jpg",
             thumbnail: "../assets/balloonAssets/columns/column5.jpg",
+            thumbnailWidth: 373,
+            thumbnailHeight: 500,
+            caption: ""
+        },
+        {
+            src: "../assets/balloonAssets/columns/column6.jpg",
+            thumbnail: "../assets/balloonAssets/columns/column6.jpg",
             thumbnailWidth: 373,
             thumbnailHeight: 500,
             caption: ""
