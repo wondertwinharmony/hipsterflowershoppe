@@ -60,51 +60,16 @@ ImgGallery.propTypes = {
 ImgGallery.defaultProps = {
     images: [
         {
-            src: "../assets/balloonAssets/customCreations/custom1.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom1.jpg",
-            thumbnailWidth: 373,
+            src: "../assets/balloonAssets/corporateEvents/corporate1.jpg",
+            thumbnail: "../assets/balloonAssets/corporateEvents/corporate1.jpg",
+            thumbnailWidth: 750,
             thumbnailHeight: 500,
             caption: ""
         },
         {
-            src: "../assets/balloonAssets/customCreations/custom2.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom2.jpg",
-            thumbnailWidth: 375,
-            thumbnailHeight: 500,
-            caption: ""
-        },
-        {
-            src: "../assets/balloonAssets/customCreations/custom3.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom3.jpg",
-            thumbnailWidth: 673,
-            thumbnailHeight: 500,
-            caption: ""
-        },
-        {
-            src: "../assets/balloonAssets/customCreations/custom4.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom4.jpg",
-            thumbnailWidth: 498,
-            thumbnailHeight: 500,
-            caption: ""
-        },
-        {
-            src: "../assets/balloonAssets/customCreations/custom5.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom5.jpg",
-            thumbnailWidth: 667,
-            thumbnailHeight: 500,
-            caption: ""
-        },
-                {
-            src: "../assets/balloonAssets/customCreations/custom6.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom6.jpg",
-            thumbnailWidth: 333,
-            thumbnailHeight: 500,
-            caption: ""
-        },
-        {
-            src: "../assets/balloonAssets/customCreations/custom7.jpg",
-            thumbnail: "../assets/balloonAssets/customCreations/custom7.jpg",
-            thumbnailWidth: 333,
+            src: "../assets/balloonAssets/corporateEvents/corporate2.jpg",
+            thumbnail: "../assets/balloonAssets/corporateEvents/corporate2.jpg",
+            thumbnailWidth: 750,
             thumbnailHeight: 500,
             caption: ""
         }

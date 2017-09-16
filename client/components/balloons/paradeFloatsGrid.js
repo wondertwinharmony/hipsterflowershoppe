@@ -30,7 +30,7 @@ export default class ImgGallery extends Component {
 
     render () {
         return (
-          <div className="flowers-content">
+          <div className="balloons-content">
                 <div className="galleryContainer" style={{ minHeight: "1px" }}>
                 <Gallery
             images={this.state.images}
