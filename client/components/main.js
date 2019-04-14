@@ -60,22 +60,6 @@ class Main extends Component {
                           <Link to="/balloondecor/frames">Photo Frames</Link>
                         </NavItem>
                       </Dropdown>
-                      <Dropdown trigger={
-                      <Button className='navButton teal lighten-1' waves='light'>Floral Designs</Button>
-                        }>
-                        <NavItem>
-                          <Link to="/floraldesigns/arrangements">Arrangements</Link>
-                        </NavItem>
-                        <NavItem>
-                          <Link to="/floraldesigns/corsagesboutonnieres">Corsages & Boutonnieres</Link>
-                        </NavItem>
-                        <NavItem>
-                          <Link to="/floraldesigns/sympathy">Sympathy Designs</Link>
-                        </NavItem>
-                        <NavItem>
-                          <Link to="/floraldesigns/weddings">Weddings</Link>
-                        </NavItem>
-                      </Dropdown>
                       <Link to="/contact" className='waves-effect waves-light btn'>Contact</Link>
                     </Col>
                   </Row>
