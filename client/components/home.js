@@ -5,7 +5,7 @@ export default class Home extends Component {
   render() {
     return (
     <div id="home-content">
-      <p>Cheri's Creative Celebrations specializes in balloon art and floral decorations. Our decorations will guarantee to make your function truly special. We recommend that you contact us directly to discuss your event decoration needs. We will be happy to offer you our professional advice and provide you with a quote based on your needs and budget.</p>
+      <p>Cheri's Creative Celebrations specializes in balloon art. Our decorations will guarantee to make your function truly special. We recommend that you contact us directly to discuss your event decoration needs. We will be happy to offer you our professional advice and provide you with a quote based on your needs and budget.</p>
       <div className="smartBalloonContainer"><a className="smartBalloonLink" href="http://www.theballooncouncil.org/smart-balloon-practices/" target="_blank"><img className="smartBalloonImg" src="../assets/smartBalloon.jpg"/></a></div>
       <ul>
         <li className="listTitle">Balloon decorations for:</li>
@@ -18,13 +18,6 @@ export default class Home extends Component {
         <li>Baby showers</li>
         <li>Wedding showers</li>
         <li>Corporate events</li>
-      </ul>
-      <ul>
-        <li className="listTitle">Floral designs for:</li>
-        <li>School dances (corsages and boutonnieres)</li>
-        <li>Anniversary Parties</li>
-        <li>Weddings</li>
-        <li>Celebrations of Life</li>
       </ul>
     </div>
     );

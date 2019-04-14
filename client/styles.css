@@ -11,7 +11,6 @@
   padding: 0px 192px 0px 192px;
 }
 
-#flowers-content,
 #balloons-content {
   display: -webkit-box;
   vertical-align: middle;
@@ -36,7 +35,7 @@ div.galleryContainer {
 div.logoContainer {
 /*  background-image: url("http://image.shutterstock.com/display_pic_with_logo/3663356/398534419/stock-vector-amazing-floral-pattern-with-bright-colorful-flowers-plants-branches-and-berries-on-a-black-398534419.jpg");*/
 /*  background-image: url("assets/bggraphic.jpg");*/
-  background-image: url("assets/bggraphic.png");
+  /* background-image: url("assets/bggraphic.png"); */
 /*  background-image: url("assets/stockalter4.png");*/
   background-size: contain;
 }
