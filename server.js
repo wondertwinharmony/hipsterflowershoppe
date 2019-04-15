@@ -8,7 +8,9 @@ var mailgun = require("mailgun-js")({
   apiKey: process.env.MAILGUN_API_KEY,
   domain: process.env.MAILGUN_DOMAIN
 });
-var validator = require("mailgun-validate-email")(process.env.MAILGUN_PUBKEY);
+var validator = require("mailgun-validate-email")(
+  process.env.MAILGUN_VALIDATIONS_PUBLIC_KEY
+);
 
 //configure the server to use bodyparser to handle post requests
 app.use(bodyParser.urlencoded({ extended: true }));
