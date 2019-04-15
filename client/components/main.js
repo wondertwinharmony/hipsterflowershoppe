@@ -67,7 +67,7 @@ class Main extends Component {
             <div className="content">
                 {this.props.children}
             </div>
-              <Footer copyrights="&copy; 2015 Copyright Cheri's Creative Celebrations. All Rights Reserved."   links={
+              <Footer copyrights="&copy; 2019 Copyright Cheri's Creative Celebrations. All Rights Reserved."   links={
                 <ul>
                   <h5 className="white-text">Follow Us On</h5>
                   <ul>
@@ -84,7 +84,7 @@ class Main extends Component {
                 <p className="contact-footer">Phone: (707)387-4138</p>
                 <p className="contact-footer">Email: cheri.creativecelebrations@gmail.com</p>
                 <p className="photographers">
-                Photos provided by <a href="https://www.facebook.com/AudraVonGlahnPhotography" target="_blank">Audra Von Glahn Photography</a>, <a href="https://www.facebook.com/MindyBreslinPhotography" target="_blank">Mindy Breslin Photography</a>, <a href="http://www.foothillphotographyonline.com/" target="_blank">Foothill Photography</a>, and <a href="http://www.rachellomeli.com/" target="_blank">Rachel Lomeli Photography</a>
+                Photos provided by <a href="https://www.facebook.com/AudraVonGlahnPhotography" target="_blank">Audra Von Glahn Photography</a>, <a href="https://www.facebook.com/MindyBreslinPhotography" target="_blank">Mindy Breslin Photography</a>, <a href="http://www.foothillphotographyonline.com/" target="_blank">Foothill Photography</a>, <a href="http://www.rachellomeli.com/" target="_blank">Rachel Lomeli Photography</a> and Agustinus Nathaniel.
                 </p>
                 <p className="webdevs">Website Design provided by <a href="https://www.linkedin.com/in/kyabut1" target="_blank">Kristine Yabut</a> and <a href="https://www.linkedin.com/in/gabrielschrock" target="_blank">Gabriel Schrock</a>
                 </p>
