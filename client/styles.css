@@ -33,11 +33,12 @@ div.galleryContainer {
 }
 
 div.logoContainer {
-/*  background-image: url("http://image.shutterstock.com/display_pic_with_logo/3663356/398534419/stock-vector-amazing-floral-pattern-with-bright-colorful-flowers-plants-branches-and-berries-on-a-black-398534419.jpg");*/
-/*  background-image: url("assets/bggraphic.jpg");*/
+  /*  background-image: url("http://image.shutterstock.com/display_pic_with_logo/3663356/398534419/stock-vector-amazing-floral-pattern-with-bright-colorful-flowers-plants-branches-and-berries-on-a-black-398534419.jpg");*/
+  /*  background-image: url("assets/bggraphic.jpg");*/
   /* background-image: url("assets/bggraphic.png"); */
-/*  background-image: url("assets/stockalter4.png");*/
-  background-size: contain;
+  /*  background-image: url("assets/stockalter4.png");*/
+  background-image: url(https://images.unsplash.com/photo-1528872042734-8f50f9d3c59b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-position: bottom;
 }
 
 footer.page-footer {
