@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "start": "node server.js",
-    "build": "grunt default"
+    "start": "node server.js"
   },
   "engines": {
     "node": "6.9.2",
