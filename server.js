@@ -3,11 +3,11 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const path = require("path");
-const hidden = require("./private/private.js");
+// const hidden = require("./private/private.js");
 
 const mailgun = require("mailgun-js")({
-  apiKey: hidden.MAILGUN_KEY,
-  domain: hidden.DOMAIN,
+  apiKey: process.env.MAILGUN_KEY,
+  domain: process.env.MAILGUN_DOMAIN,
 });
 
 //configure the server to use bodyparser to handle post requests
