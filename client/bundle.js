@@ -1328,11 +1328,11 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactMaterialize = require('react-materialize');
-
 var _reactFontawesome = require('react-fontawesome');
 
 var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
+
+var _reactMaterialize = require('react-materialize');
 
 var _reactRouter = require('react-router');
 
@@ -1547,7 +1547,7 @@ var Main = function (_Component) {
           ),
           _react2.default.createElement(
             _reactMaterialize.Footer,
-            { copyrights: '\xA9 2019 Copyright Cheri\'s Creative Celebrations. All Rights Reserved.', links: _react2.default.createElement(
+            { copyrights: '\xA9 2021 Copyright Cheri\'s Creative Celebrations. All Rights Reserved.', links: _react2.default.createElement(
                 'ul',
                 null,
                 _react2.default.createElement(

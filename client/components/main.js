@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import { Footer, Button, Row, Col, Dropdown, NavItem } from 'react-materialize';
+import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
+import { Button, Col, Dropdown, Footer, NavItem, Row } from 'react-materialize';
 import { Link } from 'react-router';
 // import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -67,7 +67,7 @@ class Main extends Component {
             <div className="content">
                 {this.props.children}
             </div>
-              <Footer copyrights="&copy; 2019 Copyright Cheri's Creative Celebrations. All Rights Reserved."   links={
+              <Footer copyrights="&copy; 2021 Copyright Cheri's Creative Celebrations. All Rights Reserved."   links={
                 <ul>
                   <h5 className="white-text">Follow Us On</h5>
                   <ul>
