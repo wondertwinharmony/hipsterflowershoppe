@@ -26,7 +26,7 @@ app.post("/contact", function (req, res) {
 
   var mailData = {
     from: req.body.first + " " + req.body.last + " " + req.body.email,
-    to: "amenotu29@gmail.com",
+    to: "cheri.creativecelebrations@gmail.com",
     subject: req.body.first + " " + req.body.last + " - " + req.body.subject,
     text: req.body.message + "\n" + req.body.first + " " + req.body.last,
   };
