@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "node server.js",
-    "postinstall": "./node_modules/grunt/bin/grunt default"
+    "build": "grunt default"
   },
   "engines": {
     "node": "6.9.2",
