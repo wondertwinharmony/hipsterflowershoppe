@@ -4,10 +4,12 @@ const app = express();
 const bodyParser = require("body-parser");
 const path = require("path");
 // const hidden = require("./private/private.js");
+
 const mailgun = require("mailgun-js")({
   apiKey: process.env.MAILGUN_KEY,
   domain: process.env.MAILGUN_DOMAIN,
 });
+
 //configure the server to use bodyparser to handle post requests
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -95,12 +97,15 @@ app.post("/contact", function (req, res) {
   //   }
   // });
 });
+
 //serve static assets
 app.use(express.static(__dirname + "/client"));
 // Handles all routes to avoid getting not found error
+
 app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "client", "index.html"));
 });
+
 //start server
 app.listen(port);
 console.log("Website is live at port: ", port);
