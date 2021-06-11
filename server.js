@@ -13,24 +13,19 @@ const mailgun = require("mailgun-js")({
 //configure the server to use bodyparser to handle post requests
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 //set the port
 var port = process.env.PORT || 7000;
-
 /**
  * Back end routing set up here
  */
-
 app.post("/contact", function (req, res) {
   console.log("req.body for /contact route: ", req.body, mailgun);
-
   var mailData = {
     from: req.body.first + " " + req.body.last + " " + req.body.email,
     to: "cheri.creativecelebrations@gmail.com",
     subject: req.body.first + " " + req.body.last + " - " + req.body.subject,
     text: req.body.message + "\n" + req.body.first + " " + req.body.last,
   };
-
   mailgun.messages().send(mailData, function (error, body) {
     if (error) {
       console.log(error);
@@ -42,16 +37,12 @@ app.post("/contact", function (req, res) {
       res.status(200).json({ message: "Your message was sent successfully." });
     }
   });
-
   // let email = req.body.email;
-
   // console.log("THIS IS THE EMAIL THAT IS BEING VALIDATED: ", email);
-
   // mg.validate
   //   .get(email)
   //   .then((data) => console.log("response.body from the MG API: ", data))
   //   .catch((err) => console.log("error from MG API: ", err));
-
   // validator(req.body.email, function(err, result) {
   //   if (err) {
   //     // email was not valid
@@ -81,9 +72,7 @@ app.post("/contact", function (req, res) {
   //           req.body.first + " " + req.body.last + " - " + req.body.subject,
   //         text: req.body.message + "\n" + req.body.first + " " + req.body.last
   //       };
-
   //       console.log("mailOptions: ", mailOptions);
-
   //       mailgun.messages().send(mailOptions, function(err, body) {
   //         if (err) {
   //           console.log(err);
@@ -111,8 +100,8 @@ app.post("/contact", function (req, res) {
 
 //serve static assets
 app.use(express.static(__dirname + "/client"));
-
 // Handles all routes to avoid getting not found error
+
 app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "client", "index.html"));
 });
