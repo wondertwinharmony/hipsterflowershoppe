@@ -81,7 +81,7 @@ class Main extends Component {
                 <p className="contact-footer">Located in Santa Rosa, CA</p>
                 <p className="contact-footer">Available by appointment</p>
                 <p className="contact-footer">Cheri Winter</p>
-                <p className="contact-footer">Phone: (707)387-4138</p>
+                <p className="contact-footer">Phone: (707) 387-4138</p>
                 <p className="contact-footer">Email: cheri.creativecelebrations@gmail.com</p>
                 <p className="photographers">
                 Photos provided by <a href="https://www.facebook.com/AudraVonGlahnPhotography" target="_blank">Audra Von Glahn Photography</a>, <a href="https://www.facebook.com/MindyBreslinPhotography" target="_blank">Mindy Breslin Photography</a>, <a href="http://www.foothillphotographyonline.com/" target="_blank">Foothill Photography</a>, <a href="http://www.rachellomeli.com/" target="_blank">Rachel Lomeli Photography</a> and Agustinus Nathaniel.

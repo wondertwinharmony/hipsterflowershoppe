@@ -4,10 +4,10 @@ const app = express();
 const bodyParser = require("body-parser");
 const path = require("path");
 // const hidden = require("./private/private.js");
-const mailgun = require("mailgun-js")({
-  apiKey: process.env.MAILGUN_KEY,
-  domain: process.env.MAILGUN_DOMAIN,
-});
+// const mailgun = require("mailgun-js")({
+//   apiKey: process.env.MAILGUN_KEY,
+//   domain: process.env.MAILGUN_DOMAIN,
+// });
 //configure the server to use bodyparser to handle post requests
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -16,25 +16,25 @@ var port = process.env.PORT || 7000;
 /**
  * Back end routing set up here
  */
-app.post("/contact", function (req, res) {
-  console.log("req.body for /contact route: ", req.body, mailgun);
-  var mailData = {
-    from: req.body.first + " " + req.body.last + " " + req.body.email,
-    to: "cheri.creativecelebrations@gmail.com",
-    subject: req.body.first + " " + req.body.last + " - " + req.body.subject,
-    text: req.body.message + "\n" + req.body.first + " " + req.body.last,
-  };
-  mailgun.messages().send(mailData, function (error, body) {
-    if (error) {
-      console.log(error);
-      return res.send(
-        "Looks like a problem on our end, please check back later."
-      );
-    } else {
-      console.log("Body from mailgun send function: ", body);
-      res.status(200).json({ message: "Your message was sent successfully." });
-    }
-  });
+// app.post("/contact", function (req, res) {
+//   console.log("req.body for /contact route: ", req.body, mailgun);
+//   var mailData = {
+//     from: req.body.first + " " + req.body.last + " " + req.body.email,
+//     to: "cheri.creativecelebrations@gmail.com",
+//     subject: req.body.first + " " + req.body.last + " - " + req.body.subject,
+//     text: req.body.message + "\n" + req.body.first + " " + req.body.last,
+//   };
+//   mailgun.messages().send(mailData, function (error, body) {
+//     if (error) {
+//       console.log(error);
+//       return res.send(
+//         "Looks like a problem on our end, please check back later."
+//       );
+//     } else {
+//       console.log("Body from mailgun send function: ", body);
+//       res.status(200).json({ message: "Your message was sent successfully." });
+//     }
+//   });
   // let email = req.body.email;
   // console.log("THIS IS THE EMAIL THAT IS BEING VALIDATED: ", email);
   // mg.validate
@@ -94,7 +94,7 @@ app.post("/contact", function (req, res) {
   //     }
   //   }
   // });
-});
+// });
 //serve static assets
 app.use(express.static(__dirname + "/client"));
 // Handles all routes to avoid getting not found error
